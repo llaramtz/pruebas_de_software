@@ -1,1 +1,910 @@
+base) PS Z:\Maestria\Pruebas de software\semana 4> python computeStatistics.py fileWithData.txt
+Execution Time: 0.022359132766723633 seconds
+(base) PS Z:\Maestria\Pruebas de software\semana 4> python computeStatistics.py fileWithData.txt
+Execution Time: 0.015074014663696289 seconds
+Mean: 19.7935
+Median: 30.48
+Mode: [-96.07, -83.37, -60.61, -58.03, -44.14, -31.46, 3.65, 17.5, 20.52, 23.93, 37.03, 43.29, 44.53, 58.24, 71.03, 73.23, 88.32, 92.27, 97.94, 98.07]
+Variance: 3709.4431027499995
+Standard Deviation: 60.90519766612698
+Execution Time: 0.09508800506591797 seconds
+(base) PS Z:\Maestria\Pruebas de software\semana 4> python computeStatistics.py fileWithData.txt
+Invalid data found and skipped: w
+Mean: 19.7935
+Median: 30.48
+Mode: [-96.07, -83.37, -60.61, -58.03, -44.14, -31.46, 3.65, 17.5, 20.52, 23.93, 37.03, 43.29, 44.53, 58.24, 71.03, 73.23, 88.32, 92.27, 97.94, 98.07]
+Variance: 3709.4431027499995
+Standard Deviation: 60.90519766612698
+Execution Time: 0.06325817108154297 seconds
+(base) PS Z:\Maestria\Pruebas de software\semana 4> python computeStatistics.py fileWithData.txt
+Invalid data found and skipped: x
+Invalid data found and skipped: w
+Mean: 19.7935
+Median: 30.48
+Mode: [-96.07, -83.37, -60.61, -58.03, -44.14, -31.46, 3.65, 17.5, 20.52, 23.93, 37.03, 43.29, 44.53, 58.24, 71.03, 73.23, 88.32, 92.27, 97.94, 98.07]
+Variance: 3709.4431027499995
+Standard Deviation: 60.90519766612698
+Execution Time: 0.11936473846435547 seconds
+(base) PS Z:\Maestria\Pruebas de software\semana 4> python convertNumbers.py fileWithData.txt   
+Invalid data found and skipped: 43.29
+Invalid data found and skipped: 17.50
+Invalid data found and skipped: 73.23
+Invalid data found and skipped: 88.32
+Invalid data found and skipped: 20.52
+Invalid data found and skipped: 44.53
+Invalid data found and skipped: x
+Invalid data found and skipped: -31.46
+Invalid data found and skipped: 3.65
+Invalid data found and skipped: 97.94
+Invalid data found and skipped: 92.27
+Invalid data found and skipped: -58.03
+Invalid data found and skipped: 58.24
+Invalid data found and skipped: 37.03
+Invalid data found and skipped: -83.37
+Invalid data found and skipped: 71.03
+Invalid data found and skipped: 98.07
+Invalid data found and skipped: -96.07
+Invalid data found and skipped: -60.61
+Invalid data found and skipped: 23.93
+Invalid data found and skipped: w
+Invalid data found and skipped: we
+Execution Time: 0.03383493423461914 seconds
+(base) PS Z:\Maestria\Pruebas de software\semana 4> python convertNumbers.py fileWithData.txt
+Invalid data found and skipped: 43.29
+Invalid data found and skipped: 17.50
+Invalid data found and skipped: 73.23
+Invalid data found and skipped: 88.32
+Invalid data found and skipped: 20.52
+Invalid data found and skipped: 44.53
+Invalid data found and skipped: x
+Invalid data found and skipped: -31.46
+Invalid data found and skipped: 3.65
+Invalid data found and skipped: 97.94
+Invalid data found and skipped: 92.27
+Invalid data found and skipped: -58.03
+Invalid data found and skipped: 58.24
+Invalid data found and skipped: 37.03
+Invalid data found and skipped: -83.37
+Invalid data found and skipped: 71.03
+Invalid data found and skipped: 98.07
+Invalid data found and skipped: -44.14
+Invalid data found and skipped: -96.07
+Invalid data found and skipped: -60.61
+Invalid data found and skipped: 23.93
+Invalid data found and skipped: w
+Invalid data found and skipped: we
+1 -> Binary: 1, Hexadecimal: 1
+3 -> Binary: 11, Hexadecimal: 3
+5 -> Binary: 101, Hexadecimal: 5
+67 -> Binary: 1000011, Hexadecimal: 43
+678 -> Binary: 1010100110, Hexadecimal: 2A6
+Execution Time: 0.07029843330383301 seconds
+(base) PS Z:\Maestria\Pruebas de software\semana 4> python wordCount.py fileWithData.txt
+Invalid data found and skipped: 43.29
+Invalid data found and skipped: 17.50
+Invalid data found and skipped: 73.23
+Invalid data found and skipped: 88.32
+Invalid data found and skipped: 20.52
+Invalid data found and skipped: 44.53
+Invalid data found and skipped: -31.46
+Invalid data found and skipped: 3.65
+Invalid data found and skipped: 97.94
+Invalid data found and skipped: 92.27
+Invalid data found and skipped: -58.03
+Invalid data found and skipped: 58.24
+Invalid data found and skipped: 37.03
+Invalid data found and skipped: -83.37
+Invalid data found and skipped: 71.03
+Invalid data found and skipped: 98.07
+Invalid data found and skipped: -44.14
+Invalid data found and skipped: -96.07
+Invalid data found and skipped: -60.61
+Invalid data found and skipped: 23.93
+Invalid data found and skipped: 1
+Invalid data found and skipped: 3
+Invalid data found and skipped: 67
+Invalid data found and skipped: 678
+w: 1
+we: 1
+Execution Time: 0.06576371192932129 seconds
+(base) PS Z:\Maestria\Pruebas de software\semana 4> python wordCount.py fileWithData.txt
+Error: 'charmap' codec can't decode byte 0x90 in position 2145: character maps to <undefined>
+Execution Time: 0.07536864280700684 seconds
+(base) PS Z:\Maestria\Pruebas de software\semana 4> python wordCount.py fileWithData.txt
+Invalid data found and skipped: 43.29
+Invalid data found and skipped: 17.50
+Invalid data found and skipped: 73.23
+Invalid data found and skipped: 88.32
+Invalid data found and skipped: 20.52
+Invalid data found and skipped: 44.53
+Invalid data found and skipped: -31.46
+Invalid data found and skipped: 3.65
+Invalid data found and skipped: 97.94
+Invalid data found and skipped: 92.27
+Invalid data found and skipped: -58.03
+Invalid data found and skipped: 58.24
+Invalid data found and skipped: 37.03
+Invalid data found and skipped: -83.37
+Invalid data found and skipped: 71.03
+Invalid data found and skipped: 98.07
+Invalid data found and skipped: -44.14
+Invalid data found and skipped: -96.07
+Invalid data found and skipped: -60.61
+Invalid data found and skipped: 23.93
+Invalid data found and skipped: 1
+Invalid data found and skipped: 3
+Invalid data found and skipped: 5
+Invalid data found and skipped: 67
+Invalid data found and skipped: 678
+Invalid data found and skipped: &#8203
+x: 1
+w: 1
+we: 1
+nzkn: 1
+acbli: 1
+lxf: 1
+jredqwyirg: 1
+gpjm: 1
+twawb: 1
+bsjcnxbyh: 1
+xgnqxxid: 1
+vpnicquvg: 1
+gxev: 1
+fvmnu: 1
+lbvwgsaw: 1
+bwe: 1
+frkw: 1
+czc: 1
+gzbrir: 1
+ugkajq: 1
+pfgv: 1
+mma: 1
+vruvssrwb: 1
+mmtf: 1
+agyncck: 1
+gvrd: 1
+gjwcflrosx: 1
+qph: 1
+csumqricnl: 1
+tewirtq: 1
+yhl: 1
+zjwk: 1
+kikruosws: 1
+uispl: 1
+hkibpaesfn: 1
+wxeafea: 1
+uwijlj: 1
+jzghnz: 1
+uzlxi: 1
+piob: 1
+jzqmbsyfv: 1
+krh: 1
+aolrejrdl: 1
+ksxgtrtm: 1
+foljqnlmmn: 1
+wfthwrgpf: 1
+wwkkltf: 1
+rptptxeb: 1
+zoorceaj: 1
+xlwyp: 1
+layaxwhvg: 1
+idcyywkob: 1
+awsevyovu: 1
+hgvnwomxyf: 1
+vmjh: 1
+xvdsfslwjp: 1
+aylrd: 1
+ekobrboc: 1
+ikvrydxm: 1
+uvrjhiz: 1
+fektacb: 1
+bzasys: 1
+doykdc: 1
+kowtgpgw: 1
+ezyjs: 1
+lvc: 1
+rjkiixia: 1
+cfc: 1
+cchlddjck: 1
+tpprsp: 1
+ommazzv: 1
+gmalrst: 1
+eyhfsimqkn: 1
+fbndmr: 1
+ekrzdn: 1
+bbmqugfne: 1
+hnho: 1
+paw: 1
+yvxbgqcqtf: 1
+bbip: 1
+acgy: 1
+amt: 1
+dxmpgaxcc: 1
+fcxipzii: 1
+rchmlyoklt: 1
+hdsdiqtxq: 1
+ijiz: 1
+ctcsoudh: 1
+vkb: 1
+sgizv: 1
+egg: 1
+wdldrftj: 1
+tzgancnd: 1
+cdh: 1
+pzdyg: 1
+obck: 1
+tjpgjjwyjv: 1
+dpkwzyzfe: 1
+uqi: 1
+gniynnkom: 1
+gzarqnjoy: 1
+yhlyhk: 1
+lvhuxjq: 1
+xyvjg: 1
+qfmfoxvvge: 1
+usff: 1
+wut: 1
+hxu: 1
+jtnbqxglj: 1
+zazcgbstl: 1
+dsahbnf: 1
+nwomps: 1
+pgyc: 1
+gachv: 1
+towpebloml: 1
+tirsfo: 1
+ztldkbouk: 1
+aydkucx: 1
+jxosxjnyb: 1
+yfnywtdl: 1
+xlqg: 1
+pbke: 1
+oihlv: 1
+zjbjgduu: 1
+dmyyaqg: 1
+sutbxdr: 1
+exj: 1
+ayhdaqdp: 1
+bsxoasig: 1
+jqtkcc: 1
+hhhfv: 1
+qztyxydg: 1
+zkjmv: 1
+ykd: 1
+qyompkfpyt: 1
+meoeulab: 1
+kzod: 1
+ntegwk: 1
+rtmhdyerv: 1
+otyvxqyr: 1
+nbqhkgke: 1
+rfwinn: 1
+aitoa: 1
+mjin: 1
+nmmgf: 1
+wvd: 1
+dynszge: 1
+hlue: 1
+hekjuaiqlv: 1
+xaskxic: 1
+wjpvjon: 1
+mygrej: 1
+gmhl: 1
+ugtkxsc: 1
+avke: 1
+svjyesaokk: 1
+kuvhbfp: 1
+qama: 1
+arsz: 1
+glcwylzok: 1
+srwmhn: 1
+nkuw: 1
+eoworyn: 1
+axiwunedhc: 1
+jrt: 1
+jwpvibk: 1
+brqgdghh: 1
+ilszrvclld: 1
+xhhveec: 1
+zfvynlsbh: 1
+slgic: 1
+qlb: 1
+lcs: 1
+snsibqjuuh: 1
+nfc: 1
+kicbeb: 1
+xnjs: 1
+viczebg: 1
+oycjnjko: 1
+rafpcxo: 1
+dcckkcemjt: 1
+tdebblfsm: 1
+xpsr: 1
+ablsx: 1
+pcd: 1
+skqufvj: 1
+deivl: 1
+aynucjvz: 1
+wlhfxgyil: 1
+tuelfzsyz: 1
+uyafr: 1
+hqcxn: 1
+efx: 1
+rxah: 1
+urdjjv: 1
+delyoma: 1
+quohnxo: 1
+xlg: 1
+bkrsmywwci: 1
+fczmuejn: 1
+klzwjz: 1
+hyqzfv: 1
+gzopgms: 1
+gvj: 1
+cckqgg: 1
+ddahsubr: 1
+zevz: 1
+gpgmdsygio: 1
+ldg: 1
+wbynzusw: 1
+dgojt: 1
+twapfoa: 1
+cvwecskh: 1
+ffttkahbth: 1
+wljkmuq: 1
+xmhzhxbztq: 1
+vcputagw: 1
+rjiyjatw: 1
+fsof: 1
+pawnv: 1
+pcxnyjaltg: 1
+dxvgdsbqda: 1
+zciuka: 1
+gcidgmgai: 1
+qrpw: 1
+kpopxowuy: 1
+scmxmtvasm: 1
+ldvjmcfoc: 1
+zgxhqwgaks: 1
+seajhygyj: 1
+zxg: 1
+ary: 1
+wyddww: 1
+mswenenbqw: 1
+hmvhtyrt: 1
+njgbsxpmd: 1
+zsym: 1
+mcyny: 1
+eqm: 1
+xpn: 1
+lhhowab: 1
+tdmog: 1
+rplhy: 1
+kgfrosuws: 1
+rqavgv: 1
+ycwetky: 1
+bdcwhsneld: 1
+foinqsgya: 1
+jcritolf: 1
+eexlwiuudf: 1
+djjaz: 1
+msu: 1
+gghfb: 1
+alqmktnkw: 1
+tudlwhch: 1
+akzza: 1
+dkvfx: 1
+nyhifv: 1
+xhrzjg: 1
+zbrjkiv: 1
+(base) PS Z:\Maestria\Pruebas de software\semana 4> python wordCount.py fileWithData.txt
+Error: 'charmap' codec can't decode byte 0x90 in position 2152: character maps to <undefined>
+Execution Time: 0.04102921485900879 seconds
+(base) PS Z:\Maestria\Pruebas de software\semana 4> python wordCount.py fileWithData.txt
+Error: 'charmap' codec can't decode byte 0x90 in position 2152: character maps to <undefined>
+Execution Time: 0.005994558334350586 seconds
+(base) PS Z:\Maestria\Pruebas de software\semana 4> pip install pylint
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: pylint in c:\programdata\anaconda3\lib\site-packages (2.16.2)
+Requirement already satisfied: platformdirs>=2.2.0 in c:\programdata\anaconda3\lib\site-packages (from pylint) (2.5.2)
+Requirement already satisfied: astroid<=2.16.0-dev0,>=2.14.2 in c:\programdata\anaconda3\lib\site-packages (from pylint) (2.14.2)
+Requirement already satisfied: isort<6,>=4.2.5 in c:\programdata\anaconda3\lib\site-packages (from pylint) (5.9.3)
+Requirement already satisfied: mccabe<0.8,>=0.6 in c:\programdata\anaconda3\lib\site-packages (from pylint) (0.7.0)
+Requirement already satisfied: tomli>=1.1.0 in c:\programdata\anaconda3\lib\site-packages (from pylint) (2.0.1)
+Requirement already satisfied: colorama>=0.4.5 in c:\programdata\anaconda3\lib\site-packages (from pylint) (0.4.6)
+Requirement already satisfied: wrapt<2,>=1.11 in c:\programdata\anaconda3\lib\site-packages (from astroid<=2.16.0-dev0,>=2.14.2->pylint) (1.14.1)
+Requirement already satisfied: typing-extensions>=4.0.0 in c:\users\llara2\appdata\roaming\python\python310\site-packages (from astroid<=2.16.0-dev0,>=2.14.2->pylint) (4.9.0)
+(base) PS Z:\Maestria\Pruebas de software\semana 4> pylint compute_statistics.py
+************* Module compute_statistics.py
+compute_statistics.py:1:0: F0001: No module named compute_statistics.py (fatal)
+(base) PS Z:\Maestria\Pruebas de software\semana 4> pylint compute_statistics.py
+computeStatistics.py:37:13: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
+computeStatistics.py:55:13: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
+computeStatistics.py:60:4: C0103: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
 
+-----------------------------------
+
+(base) PS Z:\Maestria\Pruebas de software\semana 4> pylint computeStatistics.py
+************* Module computeStatistics
+computeStatistics.py:52:0: C0301: Line too long (116/100) (line-too-long)
+computeStatistics.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+computeStatistics.py:1:0: C0103: Module name "computeStatistics" doesn't conform to snake_case naming style (invalid-name)
+computeStatistics.py:5:0: C0116: Missing function or method docstring (missing-function-docstring)
+computeStatistics.py:9:0: C0116: Missing function or method docstring (missing-function-docstring)
+computeStatistics.py:11:4: C0103: Variable name "n" doesn't conform to snake_case naming style (invalid-name)
+computeStatistics.py:16:0: C0116: Missing function or method docstring (missing-function-docstring)
+computeStatistics.py:25:0: C0116: Missing function or method docstring (missing-function-docstring)
+computeStatistics.py:30:0: C0116: Missing function or method docstring (missing-function-docstring)
+computeStatistics.py:34:0: C0116: Missing function or method docstring (missing-function-docstring)
+computeStatistics.py:60:11: W0718: Catching too general exception Exception (broad-exception-caught)
+computeStatistics.py:37:13: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
+computeStatistics.py:55:13: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
+computeStatistics.py:60:4: C0103: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
+
+------------------------------------------------------------------
+
+(base) PS Z:\Maestria\Pruebas de software\semana 4> pylint compute-statistics.py
+************* Module compute-statistics
+compute-statistics.py:52:0: C0301: Line too long (116/100) (line-too-long)
+compute-statistics.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+compute-statistics.py:1:0: C0103: Module name "compute-statistics" doesn't conform to snake_case naming style (invalid-name)
+compute-statistics.py:5:0: C0116: Missing function or method docstring (missing-function-docstring)
+compute-statistics.py:9:0: C0116: Missing function or method docstring (missing-function-docstring)
+compute-statistics.py:11:4: C0103: Variable name "n" doesn't conform to snake_case naming style (invalid-name)
+compute-statistics.py:16:0: C0116: Missing function or method docstring (missing-function-docstring)
+compute-statistics.py:25:0: C0116: Missing function or method docstring (missing-function-docstring)
+compute-statistics.py:30:0: C0116: Missing function or method docstring (missing-function-docstring)
+compute-statistics.py:34:0: C0116: Missing function or method docstring (missing-function-docstring)
+compute-statistics.py:60:11: W0718: Catching too general exception Exception (broad-exception-caught)
+compute-statistics.py:37:13: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
+compute-statistics.py:55:13: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
+compute-statistics.py:60:4: C0103: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
+
+Your code has been rated at 7.25/10
+
+(base) PS Z:\Maestria\Pruebas de software\semana 4> pylint compute_statistics.py
+************* Module compute_statistics
+compute_statistics.py:52:0: C0301: Line too long (116/100) (line-too-long)
+compute_statistics.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+compute_statistics.py:5:0: C0116: Missing function or method docstring (missing-function-docstring)
+compute_statistics.py:9:0: C0116: Missing function or method docstring (missing-function-docstring)
+compute_statistics.py:11:4: C0103: Variable name "n" doesn't conform to snake_case naming style (invalid-name)
+compute_statistics.py:16:0: C0116: Missing function or method docstring (missing-function-docstring)
+compute_statistics.py:25:0: C0116: Missing function or method docstring (missing-function-docstring)
+compute_statistics.py:30:0: C0116: Missing function or method docstring (missing-function-docstring)
+compute_statistics.py:34:0: C0116: Missing function or method docstring (missing-function-docstring)
+compute_statistics.py:60:11: W0718: Catching too general exception Exception (broad-exception-caught)
+compute_statistics.py:37:13: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
+compute_statistics.py:55:13: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
+compute_statistics.py:60:4: C0103: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
+
+-----------------------------------
+Your code has been rated at 7.45/10
+
+(base) PS Z:\Maestria\Pruebas de software\semana 4> pylint compute_statistics.py
+************* Module compute_statistics
+compute_statistics.py:52:0: C0301: Line too long (116/100) (line-too-long)
+compute_statistics.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+compute_statistics.py:9:0: C0116: Missing function or method docstring (missing-function-docstring)
+compute_statistics.py:11:4: C0103: Variable name "n" doesn't conform to snake_case naming style (invalid-name)
+compute_statistics.py:16:0: C0116: Missing function or method docstring (missing-function-docstring)
+compute_statistics.py:25:0: C0116: Missing function or method docstring (missing-function-docstring)
+compute_statistics.py:30:0: C0116: Missing function or method docstring (missing-function-docstring)
+compute_statistics.py:34:0: C0116: Missing function or method docstring (missing-function-docstring)
+compute_statistics.py:60:11: W0718: Catching too general exception Exception (broad-exception-caught)
+compute_statistics.py:37:13: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
+compute_statistics.py:55:13: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
+
+------------------------------------------------------------------
+Your code has been rated at 7.45/10 (previous run: 7.45/10, +0.00)
+
+(base) PS Z:\Maestria\Pruebas de software\semana 4> pylint compute_statistics.py
+************* Module compute_statistics
+compute_statistics.py:60:0: C0301: Line too long (116/100) (line-too-long)
+compute_statistics.py:38:0: R0914: Too many local variables (16/15) (too-many-locals)
+compute_statistics.py:68:11: W0718: Catching too general exception Exception (broad-exception-caught)
+
+Your code has been rated at 9.26/10 (previous run: 7.45/10, +1.81)
+
+(base) PS Z:\Maestria\Pruebas de software\semana 4> pylint compute_statistics.py
+************* Module compute_statistics
+compute_statistics.py:18:0: C0301: Line too long (103/100) (line-too-long)
+
+------------------------------------------------------------------
+Your code has been rated at 9.79/10 (previous run: 9.26/10, +0.53)
+
+(base) PS Z:\Maestria\Pruebas de software\semana 4> pylint compute_statistics.py
+
+-------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 9.79/10, +0.21)
+
+(base) PS Z:\Maestria\Pruebas de software\semana 4> pylint convert_numbers.py   
+convert_numbers.py:14:0: C0301: Line too long (112/100) (line-too-long)
+convert_numbers.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+convert_numbers.py:5:0: C0116: Missing function or method docstring (missing-function-docstring)
+convert_numbers.py:13:0: C0116: Missing function or method docstring (missing-function-docstring)
+convert_numbers.py:23:0: C0116: Missing function or method docstring (missing-function-docstring)
+convert_numbers.py:45:11: W0718: Catching too general exception Exception (broad-exception-caught)
+convert_numbers.py:26:13: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
+convert_numbers.py:35:13: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
+convert_numbers.py:50:13: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
+
+-----------------------------------
+Your code has been rated at 7.83/10
+(base) PS Z:\Maestria\Pruebas de software\semana 4> pylint convert_numbers.py
+************* Module convert_numbers
+convert_numbers.py:10:0: C0301: Line too long (101/100) (line-too-long)
+convert_numbers.py:18:0: C0301: Line too long (105/100) (line-too-long)
+convert_numbers.py:19:0: C0301: Line too long (148/100) (line-too-long)
+
+------------------------------------------------------------------
+Your code has been rated at 9.25/10 (previous run: 7.83/10, +1.42)
+
+(base) PS Z:\Maestria\Pruebas de software\semana 4> pylint convert_numbers.py
+
+-------------------------------------------------------------------
+
+(base) PS Z:\Maestria\Pruebas de software\semana 4> pylint word_count.py     
+************* Module word_count
+word_count.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+word_count.py:4:0: C0116: Missing function or method docstring (missing-function-docstring)
+word_count.py:29:11: W0718: Catching too general exception Exception (broad-exception-caught)
+word_count.py:21:13: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
+word_count.py:29:4: C0103: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
+word_count.py:34:13: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
+
+Your code has been rated at 7.94/10
+
+(base) PS Z:\Maestria\Pruebas de software\semana 4> pylint word_count.py
+************* Module word_count
+word_count.py:3:0: C0301: Line too long (108/100) (line-too-long)
+
+------------------------------------------------------------------
+Your code has been rated at 9.67/10 (previous run: 7.94/10, +1.73)
+
+(base) PS Z:\Maestria\Pruebas de software\semana 4> pylint word_count.py
+
+-------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 9.67/10, +0.33)
+
+(base) PS Z:\Maestria\Pruebas de software\semana 4> python compute_statistics.py fileWithData.txt
+Invalid data found and skipped: x - Error: could not convert string to float: 'x'
+Invalid data found and skipped: w - Error: could not convert string to float: 'w'
+Invalid data found and skipped: we - Error: could not convert string to float: 'we'
+Invalid data found and skipped:  - Error: could not convert string to float: ''
+Invalid data found and skipped: nzkn acbli lxf jredqwyirg gpjm twawb bsjcnxbyh xgnqxxid vpnicquvg gxev - Error: could not convert string to float: 'nzkn acbli lxf jredqwyirg gpjm twawb bsjcnxbyh xgnqxxid vpnicquvg gxev'
+Invalid data found and skipped: fvmnu lbvwgsaw bwe frkw czc gzbrir ugkajq pfgv mma vruvssrwb - Error: could not convert string to float: 'fvmnu lbvwgsaw bwe frkw czc gzbrir ugkajq pfgv mma vruvssrwb'
+Invalid data found and skipped: mmtf agyncck gvrd gjwcflrosx qph csumqricnl tewirtq yhl zjwk kikruosws - Error: could not convert string to float: 'mmtf agyncck gvrd gjwcflrosx qph csumqricnl tewirtq yhl zjwk kikruosws'
+Invalid data found and skipped: uispl hkibpaesfn wxeafea uwijlj jzghnz uzlxi piob jzqmbsyfv krh aolrejrdl - Error: could not convert string to float: 'uispl hkibpaesfn wxeafea uwijlj jzghnz uzlxi piob jzqmbsyfv krh aolrejrdl'       
+Invalid data found and skipped: ksxgtrtm foljqnlmmn wfthwrgpf wwkkltf rptptxeb zoorceaj xlwyp layaxwhvg idcyywkob awsevyovu - Error: could not convert string to float: 'ksxgtrtm foljqnlmmn wfthwrgpf wwkkltf rptptxeb zoorceaj xlwyp l
+ayaxwhvg idcyywkob awsevyovu'
+Invalid data found and skipped: hgvnwomxyf vmjh xvdsfslwjp aylrd ekobrboc ikvrydxm uvrjhiz fektacb bzasys doykdc - Error: could not convert string to float: 'hgvnwomxyf vmjh xvdsfslwjp aylrd ekobrboc ikvrydxm uvrjhiz fektacb bzasys 
+doykdc'
+Invalid data found and skipped: kowtgpgw ezyjs lvc rjkiixia cfc cchlddjck tpprsp ommazzv gmalrst eyhfsimqkn - Error: could not convert string to float: 'kowtgpgw ezyjs lvc rjkiixia cfc cchlddjck tpprsp ommazzv gmalrst eyhfsimqkn'   
+Invalid data found and skipped: fbndmr ekrzdn bbmqugfne hnho paw yvxbgqcqtf bbip acgy amt dxmpgaxcc - Error: could not convert string to float: 'fbndmr ekrzdn bbmqugfne hnho paw yvxbgqcqtf bbip acgy amt dxmpgaxcc'
+Invalid data found and skipped: fcxipzii rchmlyoklt hdsdiqtxq ijiz ctcsoudh vkb sgizv egg wdldrftj tzgancnd - Error: could not convert string to float: 'fcxipzii rchmlyoklt hdsdiqtxq ijiz ctcsoudh vkb sgizv egg wdldrftj tzgancnd'   
+Invalid data found and skipped: cdh pzdyg obck tjpgjjwyjv dpkwzyzfe uqi gniynnkom gzarqnjoy yhlyhk lvhuxjq - Error: could not convert string to float: 'cdh pzdyg obck tjpgjjwyjv dpkwzyzfe uqi gniynnkom gzarqnjoy yhlyhk lvhuxjq'     
+Invalid data found and skipped: xyvjg qfmfoxvvge usff wut hxu jtnbqxglj zazcgbstl dsahbnf nwomps pgyc - Error: could not convert string to float: 'xyvjg qfmfoxvvge usff wut hxu jtnbqxglj zazcgbstl dsahbnf nwomps pgyc'
+Invalid data found and skipped: gachv towpebloml tirsfo ztldkbouk aydkucx jxosxjnyb yfnywtdl xlqg pbke oihlv - Error: could not convert string to float: 'gachv towpebloml tirsfo ztldkbouk aydkucx jxosxjnyb yfnywtdl xlqg pbke oihlv' 
+Invalid data found and skipped: zjbjgduu dmyyaqg sutbxdr exj ayhdaqdp bsxoasig jqtkcc hhhfv qztyxydg zkjmv - Error: could not convert string to float: 'zjbjgduu dmyyaqg sutbxdr exj ayhdaqdp bsxoasig jqtkcc hhhfv qztyxydg zkjmv'     
+Invalid data found and skipped: ykd qyompkfpyt meoeulab kzod ntegwk rtmhdyerv otyvxqyr nbqhkgke rfwinn aitoa - Error: could not convert string to float: 'ykd qyompkfpyt meoeulab kzod ntegwk rtmhdyerv otyvxqyr nbqhkgke rfwinn aitoa' 
+Invalid data found and skipped: mjin nmmgf wvd dynszge hlue hekjuaiqlv xaskxic wjpvjon mygrej gmhl - Error: could not convert string to float: 'mjin nmmgf wvd dynszge hlue hekjuaiqlv xaskxic wjpvjon mygrej gmhl'
+Invalid data found and skipped: ugtkxsc avke svjyesaokk kuvhbfp qama arsz glcwylzok srwmhn nkuw eoworyn - Error: could not convert string to float: 'ugtkxsc avke svjyesaokk kuvhbfp qama arsz glcwylzok srwmhn nkuw eoworyn'
+Invalid data found and skipped: axiwunedhc jrt jwpvibk brqgdghh ilszrvclld xhhveec zfvynlsbh slgic qlb lcs - Error: could not convert string to float: 'axiwunedhc jrt jwpvibk brqgdghh ilszrvclld xhhveec zfvynlsbh slgic qlb lcs'     
+Invalid data found and skipped: snsibqjuuh nfc kicbeb xnjs viczebg oycjnjko rafpcxo dcckkcemjt tdebblfsm xpsr - Error: could not convert string to float: 'snsibqjuuh nfc kicbeb xnjs viczebg oycjnjko rafpcxo dcckkcemjt tdebblfsm xpsr
+'
+Invalid data found and skipped: ablsx pcd skqufvj deivl aynucjvz wlhfxgyil tuelfzsyz uyafr hqcxn efx - Error: could not convert string to float: 'ablsx pcd skqufvj deivl aynucjvz wlhfxgyil tuelfzsyz uyafr hqcxn efx'
+Invalid data found and skipped: rxah urdjjv delyoma quohnxo xlg bkrsmywwci fczmuejn klzwjz hyqzfv gzopgms - Error: could not convert string to float: 'rxah urdjjv delyoma quohnxo xlg bkrsmywwci fczmuejn klzwjz hyqzfv gzopgms'       
+Invalid data found and skipped: gvj cckqgg ddahsubr zevz gpgmdsygio ldg wbynzusw dgojt twapfoa cvwecskh - Error: could not convert string to float: 'gvj cckqgg ddahsubr zevz gpgmdsygio ldg wbynzusw dgojt twapfoa cvwecskh'
+tg dxvgdsbqda zciuka'
+Invalid data found and skipped: gcidgmgai qrpw kpopxowuy scmxmtvasm ldvjmcfoc zgxhqwgaks seajhygyj zxg ary wyddww - Error: could not convert string to float: 'gcidgmgai qrpw kpopxowuy scmxmtvasm ldvjmcfoc zgxhqwgaks seajhygyj zxg ar
+y wyddww'
+Invalid data found and skipped: mswenenbqw hmvhtyrt njgbsxpmd zsym mcyny eqm xpn lhhowab tdmog rplhy - Error: could not convert string to float: 'mswenenbqw hmvhtyrt njgbsxpmd zsym mcyny eqm xpn lhhowab tdmog rplhy'
+Invalid data found and skipped: kgfrosuws rqavgv ycwetky bdcwhsneld foinqsgya jcritolf eexlwiuudf djjaz msu gghfb - Error: could not convert string to float: 'kgfrosuws rqavgv ycwetky bdcwhsneld foinqsgya jcritolf eexlwiuudf djjaz m
+su gghfb'
+zbrjkiv &#8203 &#8203;``【oaicite:0】``&#8203;'
+Mean: 45.9948
+Median: 23.93
+Mode: [-96.07, -83.37, -60.61, -58.03, -44.14, -31.46, 1.0, 3.0, 3.65, 5.0, 17.5, 20.52, 23.93, 37.03, 43.29, 44.53, 58.24, 67.0, 71.03, 73.23, 88.32, 92.27, 97.94, 98.07, 678.0]
+Variance: 19733.778968960003
+Standard Deviation: 140.4769695322333
+Execution Time: 0.07959246635437012 seconds
+(base) PS Z:\Maestria\Pruebas de software\semana 4> python convert_numbers.py fileWithData.txt   
+1 -> Binary: 1, Hexadecimal: 1
+3 -> Binary: 11, Hexadecimal: 3
+5 -> Binary: 101, Hexadecimal: 5
+67 -> Binary: 1000011, Hexadecimal: 43
+678 -> Binary: 1010100110, Hexadecimal: 2A6
+Execution Time: 0.05215811729431152 seconds
+(base) PS Z:\Maestria\Pruebas de software\semana 4> python word_count.py fileWithData.txt     
+Invalid data found and skipped: 43.29
+Invalid data found and skipped: 17.50
+Invalid data found and skipped: 73.23
+Invalid data found and skipped: 88.32
+Invalid data found and skipped: 20.52
+Invalid data found and skipped: 44.53
+Invalid data found and skipped: -31.46
+Invalid data found and skipped: 3.65
+Invalid data found and skipped: 97.94
+Invalid data found and skipped: 92.27
+Invalid data found and skipped: -58.03
+Invalid data found and skipped: 58.24
+Invalid data found and skipped: 37.03
+Invalid data found and skipped: -83.37
+Invalid data found and skipped: 71.03
+Invalid data found and skipped: 98.07
+Invalid data found and skipped: -44.14
+Invalid data found and skipped: -96.07
+Invalid data found and skipped: -60.61
+Invalid data found and skipped: 23.93
+Invalid data found and skipped: 1
+Invalid data found and skipped: 3
+Invalid data found and skipped: 5
+Invalid data found and skipped: 67
+Invalid data found and skipped: 678
+Invalid data found and skipped: &#8203
+Invalid data found and skipped: &#8203;``【oaicite:0】``&#8203;
+x: 1
+w: 1
+we: 1
+nzkn: 1
+acbli: 1
+lxf: 1
+jredqwyirg: 1
+gpjm: 1
+twawb: 1
+bsjcnxbyh: 1
+xgnqxxid: 1
+vpnicquvg: 1
+gxev: 1
+fvmnu: 1
+lbvwgsaw: 1
+bwe: 1
+frkw: 1
+czc: 1
+gzbrir: 1
+ugkajq: 1
+pfgv: 1
+mma: 1
+vruvssrwb: 1
+mmtf: 1
+agyncck: 1
+gvrd: 1
+gjwcflrosx: 1
+qph: 1
+csumqricnl: 1
+tewirtq: 1
+yhl: 1
+zjwk: 1
+kikruosws: 1
+uispl: 1
+hkibpaesfn: 1
+wxeafea: 1
+uwijlj: 1
+jzghnz: 1
+uzlxi: 1
+piob: 1
+jzqmbsyfv: 1
+krh: 1
+aolrejrdl: 1
+ksxgtrtm: 1
+foljqnlmmn: 1
+wfthwrgpf: 1
+wwkkltf: 1
+rptptxeb: 1
+zoorceaj: 1
+xlwyp: 1
+layaxwhvg: 1
+idcyywkob: 1
+awsevyovu: 1
+hgvnwomxyf: 1
+vmjh: 1
+xvdsfslwjp: 1
+aylrd: 1
+ekobrboc: 1
+ikvrydxm: 1
+uvrjhiz: 1
+fektacb: 1
+bzasys: 1
+doykdc: 1
+kowtgpgw: 1
+ezyjs: 1
+lvc: 1
+rjkiixia: 1
+cfc: 1
+cchlddjck: 1
+tpprsp: 1
+ommazzv: 1
+gmalrst: 1
+eyhfsimqkn: 1
+fbndmr: 1
+ekrzdn: 1
+bbmqugfne: 1
+hnho: 1
+paw: 1
+yvxbgqcqtf: 1
+bbip: 1
+acgy: 1
+amt: 1
+dxmpgaxcc: 1
+fcxipzii: 1
+rchmlyoklt: 1
+hdsdiqtxq: 1
+ijiz: 1
+ctcsoudh: 1
+vkb: 1
+sgizv: 1
+egg: 1
+wdldrftj: 1
+tzgancnd: 1
+cdh: 1
+pzdyg: 1
+obck: 1
+tjpgjjwyjv: 1
+dpkwzyzfe: 1
+uqi: 1
+gniynnkom: 1
+gzarqnjoy: 1
+yhlyhk: 1
+lvhuxjq: 1
+xyvjg: 1
+qfmfoxvvge: 1
+usff: 1
+wut: 1
+hxu: 1
+jtnbqxglj: 1
+zazcgbstl: 1
+dsahbnf: 1
+nwomps: 1
+pgyc: 1
+gachv: 1
+towpebloml: 1
+tirsfo: 1
+ztldkbouk: 1
+aydkucx: 1
+jxosxjnyb: 1
+yfnywtdl: 1
+xlqg: 1
+pbke: 1
+oihlv: 1
+zjbjgduu: 1
+dmyyaqg: 1
+sutbxdr: 1
+exj: 1
+ayhdaqdp: 1
+bsxoasig: 1
+jqtkcc: 1
+hhhfv: 1
+qztyxydg: 1
+zkjmv: 1
+ykd: 1
+qyompkfpyt: 1
+meoeulab: 1
+kzod: 1
+ntegwk: 1
+rtmhdyerv: 1
+otyvxqyr: 1
+nbqhkgke: 1
+rfwinn: 1
+aitoa: 1
+mjin: 1
+nmmgf: 1
+wvd: 1
+dynszge: 1
+hlue: 1
+hekjuaiqlv: 1
+xaskxic: 1
+wjpvjon: 1
+mygrej: 1
+gmhl: 1
+ugtkxsc: 1
+avke: 1
+svjyesaokk: 1
+kuvhbfp: 1
+qama: 1
+arsz: 1
+glcwylzok: 1
+srwmhn: 1
+nkuw: 1
+eoworyn: 1
+axiwunedhc: 1
+jrt: 1
+jwpvibk: 1
+brqgdghh: 1
+ilszrvclld: 1
+xhhveec: 1
+zfvynlsbh: 1
+slgic: 1
+qlb: 1
+lcs: 1
+snsibqjuuh: 1
+nfc: 1
+kicbeb: 1
+xnjs: 1
+viczebg: 1
+oycjnjko: 1
+rafpcxo: 1
+dcckkcemjt: 1
+tdebblfsm: 1
+xpsr: 1
+ablsx: 1
+pcd: 1
+skqufvj: 1
+deivl: 1
+aynucjvz: 1
+wlhfxgyil: 1
+tuelfzsyz: 1
+uyafr: 1
+hqcxn: 1
+efx: 1
+rxah: 1
+urdjjv: 1
+delyoma: 1
+quohnxo: 1
+xlg: 1
+bkrsmywwci: 1
+fczmuejn: 1
+klzwjz: 1
+hyqzfv: 1
+gzopgms: 1
+gvj: 1
+cckqgg: 1
+ddahsubr: 1
+zevz: 1
+gpgmdsygio: 1
+ldg: 1
+wbynzusw: 1
+dgojt: 1
+twapfoa: 1
+cvwecskh: 1
+ffttkahbth: 1
+wljkmuq: 1
+xmhzhxbztq: 1
+vcputagw: 1
+rjiyjatw: 1
+fsof: 1
+pawnv: 1
+pcxnyjaltg: 1
+dxvgdsbqda: 1
+zciuka: 1
+gcidgmgai: 1
+qrpw: 1
+kpopxowuy: 1
+scmxmtvasm: 1
+ldvjmcfoc: 1
+zgxhqwgaks: 1
+seajhygyj: 1
+zxg: 1
+ary: 1
+wyddww: 1
+mswenenbqw: 1
+hmvhtyrt: 1
+njgbsxpmd: 1
+zsym: 1
+mcyny: 1
+eqm: 1
+xpn: 1
+lhhowab: 1
+tdmog: 1
+rplhy: 1
+kgfrosuws: 1
+rqavgv: 1
+ycwetky: 1
+bdcwhsneld: 1
+foinqsgya: 1
+jcritolf: 1
+eexlwiuudf: 1
+djjaz: 1
+msu: 1
+gghfb: 1
+alqmktnkw: 1
+tudlwhch: 1
+akzza: 1
+gbmv: 1
+dkvfx: 1
+nyhifv: 1
+vdx: 1
+xhrzjg: 1
+zbrjkiv: 1
+Execution Time: 0.10334014892578125 seconds
+(base) PS Z:\Maestria\Pruebas de software\semana 4>

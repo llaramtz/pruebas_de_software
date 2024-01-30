@@ -1,0 +1,7 @@
+1 -> Binary: 1, Hexadecimal: 1
+3 -> Binary: 11, Hexadecimal: 3
+5 -> Binary: 101, Hexadecimal: 5
+67 -> Binary: 1000011, Hexadecimal: 43
+678 -> Binary: 1010100110, Hexadecimal: 2A6
+
+Execution Time: 0.05215811729431152 seconds
