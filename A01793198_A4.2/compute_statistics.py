@@ -5,7 +5,6 @@ desviación estándar y varianza) para un conjunto de datos numéricos proporcio
 
 import sys
 import time
-
 def calculate_mean(numbers):
     """Calcula y retorna la media de una lista de números."""
     return sum(numbers) / len(numbers) if numbers else 0
@@ -31,9 +30,15 @@ def calculate_mode(numbers):
     return mode[0] if len(mode) == 1 else mode
 
 def calculate_variance(numbers):
-    """Calcula y retorna la varianza de una lista de números."""
+    """Calcula y retorna la varianza de una lista de números. """
     mean = calculate_mean(numbers)
     return sum((x - mean) ** 2 for x in numbers) / len(numbers) if numbers else 0
+
+def calculate_sample_variance(numbers):
+    """Calcula y retorna la varianza de una muestra de números."""
+    mean = calculate_mean(numbers)
+    num_samples = len(numbers)  # Cambiado de 'n' a 'num_samples'
+    return sum((x - mean) ** 2 for x in numbers) / (num_samples - 1) if num_samples > 1 else 0
 
 def calculate_stdev(numbers):
     """Calcula y retorna la desviación estándar de una lista de números."""
@@ -55,14 +60,16 @@ def compute_statistics(filename):
                 except ValueError as val_error:
                     print(f"Invalid data found and skipped: {line.strip()} - Error: {val_error}")
 
-        results = (f"Mean: {calculate_mean(numbers)}\n"
+        results = (f"Count: {len(numbers)}\n"
+                   f"Mean: {calculate_mean(numbers)}\n"
                    f"Median: {calculate_median(numbers)}\n"
                    f"Mode: {calculate_mode(numbers)}\n"
+                   f"Standard Deviation: {calculate_stdev(numbers)}\n"
                    f"Variance: {calculate_variance(numbers)}\n"
-                   f"Standard Deviation: {calculate_stdev(numbers)}")
+                   f"Sample Variance: {calculate_sample_variance(numbers)}")
         print(results)
 
-        with open('StatisticsResults.txt', 'w', encoding='utf-8') as file:
+        with open(filename+'.Results.txt', 'w', encoding='utf-8') as file:
             file.write(results)
 
     except FileNotFoundError as fnf_error:
