@@ -1,4 +1,4 @@
-# Pruebas de Software y Aseguramiento de la Calidad - Grupo 10
+## Pruebas de Software y Aseguramiento de la Calidad - Grupo 10
 
 Descripción
 Este repositorio contiene todos los materiales y tareas del curso de Pruebas de Software y Aseguramiento de la Calidad, perteneciente al Grupo 10. Aquí encontrarás ejemplos prácticos, ejercicios, y proyectos relacionados con las metodologías y herramientas más actuales en el campo del aseguramiento de la calidad y las pruebas de software.
