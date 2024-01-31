@@ -39,7 +39,7 @@ def convert_numbers(filename):
         with open(filename, 'r', encoding='utf-8') as file:
             numbers = [int(line.strip()) for line in file if line.strip().isdigit()]
 
-        with open('ConversionResults.txt', 'w', encoding='utf-8') as file:
+        with open(filename+'.P2.Results.txt', 'w', encoding='utf-8') as file:
             for number in numbers:
                 binary = to_binary(number)
                 hexadecimal = to_hexadecimal(number)
@@ -55,7 +55,7 @@ def convert_numbers(filename):
     finally:
         elapsed_time = time.time() - start_time
         print(f"Execution Time: {elapsed_time} seconds")
-        with open('ConversionResults.txt', 'a', encoding='utf-8') as file:
+        with open(filename+'.P2.Results.txt', 'a', encoding='utf-8') as file:
             file.write(f"\nExecution Time: {elapsed_time} seconds")
 
 if __name__ == "__main__":
