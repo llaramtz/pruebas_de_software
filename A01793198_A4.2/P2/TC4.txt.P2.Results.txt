@@ -1,0 +1,28 @@
+8 -> Binary: 1000, Hexadecimal: 8
+34 -> Binary: 100010, Hexadecimal: 22
+17 -> Binary: 10001, Hexadecimal: 11
+49 -> Binary: 110001, Hexadecimal: 31
+5 -> Binary: 101, Hexadecimal: 5
+0 -> Binary: 0, Hexadecimal: 0
+33 -> Binary: 100001, Hexadecimal: 21
+12 -> Binary: 1100, Hexadecimal: C
+27 -> Binary: 11011, Hexadecimal: 1B
+26 -> Binary: 11010, Hexadecimal: 1A
+49 -> Binary: 110001, Hexadecimal: 31
+29 -> Binary: 11101, Hexadecimal: 1D
+42 -> Binary: 101010, Hexadecimal: 2A
+34 -> Binary: 100010, Hexadecimal: 22
+20 -> Binary: 10100, Hexadecimal: 14
+0 -> Binary: 0, Hexadecimal: 0
+25 -> Binary: 11001, Hexadecimal: 19
+45 -> Binary: 101101, Hexadecimal: 2D
+3 -> Binary: 11, Hexadecimal: 3
+29 -> Binary: 11101, Hexadecimal: 1D
+33 -> Binary: 100001, Hexadecimal: 21
+29 -> Binary: 11101, Hexadecimal: 1D
+26 -> Binary: 11010, Hexadecimal: 1A
+12 -> Binary: 1100, Hexadecimal: C
+45 -> Binary: 101101, Hexadecimal: 2D
+0 -> Binary: 0, Hexadecimal: 0
+
+Execution Time: 0.05512833595275879 seconds
