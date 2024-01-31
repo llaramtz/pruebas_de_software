@@ -25,7 +25,7 @@ def count_words(filename):
                     else:
                         print(f"Invalid data found and skipped: {word}")
 
-        with open('WordCountResults.txt', 'w', encoding='utf-8') as file:
+        with open(filename+'.P3.Results.txt', 'w', encoding='utf-8') as file:
             for word, count in word_count.items():
                 result = f"{word}: {count}"
                 print(result)
@@ -36,7 +36,7 @@ def count_words(filename):
     finally:
         elapsed_time = time.time() - start_time
         print(f"Execution Time: {elapsed_time} seconds")
-        with open('WordCountResults.txt', 'a', encoding='utf-8') as file:
+        with open(filename+'.P3.Results.txt', 'a', encoding='utf-8') as file:
             file.write(f"\nExecution Time: {elapsed_time} seconds")
 
 if __name__ == "__main__":
