@@ -1,3 +1,5 @@
+-39 -> Binary: 011001, Hexadecimal: D9
+-36 -> Binary: 011100, Hexadecimal: DC
 8 -> Binary: 1000, Hexadecimal: 8
 34 -> Binary: 100010, Hexadecimal: 22
 17 -> Binary: 10001, Hexadecimal: 11
@@ -6,23 +8,33 @@
 0 -> Binary: 0, Hexadecimal: 0
 33 -> Binary: 100001, Hexadecimal: 21
 12 -> Binary: 1100, Hexadecimal: C
+-6 -> Binary: 010, Hexadecimal: A
 27 -> Binary: 11011, Hexadecimal: 1B
+-4 -> Binary: 100, Hexadecimal: C
+-38 -> Binary: 011010, Hexadecimal: DA
 26 -> Binary: 11010, Hexadecimal: 1A
 49 -> Binary: 110001, Hexadecimal: 31
 29 -> Binary: 11101, Hexadecimal: 1D
 42 -> Binary: 101010, Hexadecimal: 2A
+-16 -> Binary: 10000, Hexadecimal: F0
 34 -> Binary: 100010, Hexadecimal: 22
 20 -> Binary: 10100, Hexadecimal: 14
 0 -> Binary: 0, Hexadecimal: 0
 25 -> Binary: 11001, Hexadecimal: 19
 45 -> Binary: 101101, Hexadecimal: 2D
 3 -> Binary: 11, Hexadecimal: 3
+-46 -> Binary: 010010, Hexadecimal: D2
+-46 -> Binary: 010010, Hexadecimal: D2
 29 -> Binary: 11101, Hexadecimal: 1D
 33 -> Binary: 100001, Hexadecimal: 21
 29 -> Binary: 11101, Hexadecimal: 1D
 26 -> Binary: 11010, Hexadecimal: 1A
+-5 -> Binary: 011, Hexadecimal: B
+-36 -> Binary: 011100, Hexadecimal: DC
 12 -> Binary: 1100, Hexadecimal: C
 45 -> Binary: 101101, Hexadecimal: 2D
+-50 -> Binary: 001110, Hexadecimal: CE
 0 -> Binary: 0, Hexadecimal: 0
+-6 -> Binary: 010, Hexadecimal: A
 
-Execution Time: 0.05512833595275879 seconds
+Execution Time: 1.1568922996520996 seconds
