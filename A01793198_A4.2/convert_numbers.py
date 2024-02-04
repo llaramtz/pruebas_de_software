@@ -25,10 +25,20 @@ def to_binary(number):
         number = number // 2
 
     if is_negative:
-        bits = len(binary)  # Determina la longitud necesaria para representar el número
-        binary = ''.join('1' if b == '0' else '0' for b in binary)  # Complemento a uno
-        binary = bin(int(binary, 2) + 1)[2:]  # Complemento a dos
-        binary = binary.zfill(bits)
+        # Complemento a uno
+        binary = ''.join('1' if b == '0' else '0' for b in binary)
+        # Complemento a dos
+        binary_list = list(binary)
+        # Encuentra el primer '0' desde la derecha (final de la lista)
+        for i in range(len(binary_list) - 1, -1, -1):
+            if binary_list[i] == '0':
+                binary_list[i] = '1'
+                break
+            binary_list[i] = '0'
+        else:
+            # Si todos son '1's, agrega '1' al inicio para manejar el overflow
+            binary_list.insert(0, '1')
+        binary = ''.join(binary_list)
 
     return binary
 
@@ -53,10 +63,22 @@ def to_hexadecimal(number):
         number = number // 16
 
     if is_negative:
-        bits = len(hexadecimal) * 4  # Determina la longitud necesaria en bits
-        hexadecimal = ''.join(hex_map[(15 - int(h, 16)) % 16] for h in hexadecimal)
-        hexadecimal = hex(int(hexadecimal, 16) + 1)[2:].upper()  # Complemento a dos
-        hexadecimal = hexadecimal.zfill(bits // 4)
+        # Complemento a uno
+        hexadecimal = ''.join(hex_map[15 - int(h, 16)] for h in hexadecimal)
+        # Complemento a dos
+        hex_list = ['0' * (len(hexadecimal) - len(hexadecimal.lstrip('F')))
+                    + hexadecimal.lstrip('F')]
+        hex_list = list(hex_list[0])  # Convertir a lista para manipulación
+        carry = 1
+        for i in range(len(hex_list) - 1, -1, -1):
+            if carry == 0:
+                break
+            val = int(hex_list[i], 16) + carry
+            hex_list[i] = hex_map[val % 16]
+            carry = val // 16
+        if carry > 0:
+            hex_list.insert(0, hex_map[carry])
+        hexadecimal = ''.join(hex_list)
 
     return hexadecimal
 
