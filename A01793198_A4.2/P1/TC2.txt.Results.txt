@@ -1,0 +1,7 @@
+Count: 1977
+Mean: 250.7840161861406
+Median: 247.0
+Mode: 230.0
+Standard Deviation: 144.17131868884059
+Variance: 20785.36913247923
+Sample Variance: 20795.888043983523
