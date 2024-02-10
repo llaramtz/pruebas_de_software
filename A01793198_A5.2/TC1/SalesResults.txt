@@ -1,0 +1,22 @@
+Rustic breakfast: Quantity Sold: 3, Total Sales: $63.96
+Sandwich with salad: Quantity Sold: 5, Total Sales: $112.40
+Raw legums: Quantity Sold: 21, Total Sales: $359.31
+Fresh stawberry: Quantity Sold: 5, Total Sales: $142.95
+Pears juice: Quantity Sold: 3, Total Sales: $58.47
+Green smoothie: Quantity Sold: 22, Total Sales: $388.96
+Cuban sandwiche: Quantity Sold: 11, Total Sales: $203.50
+Hazelnut in black ceramic bowl: Quantity Sold: 7, Total Sales: $191.45
+Tomatoes: Quantity Sold: 2, Total Sales: $52.06
+Plums: Quantity Sold: 4, Total Sales: $76.72
+Fresh blueberries: Quantity Sold: 7, Total Sales: $147.07
+Corn: Quantity Sold: 19, Total Sales: $257.45
+French fries: Quantity Sold: 3, Total Sales: $54.96
+Ground beef meat burger: Quantity Sold: 4, Total Sales: $46.92
+Cherry: Quantity Sold: 4, Total Sales: $57.40
+Homemade bread: Quantity Sold: 6, Total Sales: $104.88
+Smoothie with chia seeds: Quantity Sold: 3, Total Sales: $75.78
+Peaches on branch: Quantity Sold: 2, Total Sales: $51.24
+Pesto with basil: Quantity Sold: 2, Total Sales: $36.38
+
+Grand Total of All Sales: $2481.86
+Execution and calculus time: 0.11 seconds.
