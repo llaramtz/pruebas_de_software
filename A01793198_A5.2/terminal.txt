@@ -1,0 +1,420 @@
+(base) PS Z:\Maestria\Pruebas de software\Semana 5\A01793198_A5.2> ls
+
+
+    Directory: Z:\Maestria\Pruebas de software\Semana 5\A01793198_A5.2
+Mode                 LastWriteTime         Length Name                                                                                                                                                                                  
+----                 -------------         ------ ----                                                                                                                                                                                  
+d-----          2/5/2024   9:12 AM                .idea                                                                                                                                                                                 
+da----          2/5/2024   8:58 AM                TC1                                                                                                                                                                                   
+da----          2/5/2024   8:58 AM                TC2                                                                                                                                                                                   
+da----          2/5/2024   8:58 AM                TC3                                                                                                                                                                                   
+-a----          2/5/2024   8:56 AM         103555 Actividad 5.2_Ejercicios.pdf                                                                                                                                                          
+-a----          2/5/2024   9:12 AM            926 compute_sales.py                                                                                                                                                                      
+-a----          2/5/2024   8:56 AM             46 Results.txt
+Cuban sandwiche: $203.50
+Hazelnut in black ceramic bowl: $191.45
+Tomatoes: $52.06
+Plums: $76.72
+Fresh blueberries: $147.07
+Corn: $257.45
+French fries: $54.96
+Ground beef meat burger: $46.92
+Cherry: $57.40
+Smoothie with chia seeds: $75.78
+Peaches on branch: $51.24
+Pesto with basil: $36.38
+(base) PS Z:\Maestria\Pruebas de software\Semana 5\A01793198_A5.2> python compute_sales.py TC1/TC1.ProductList.json TC1/TC1.Sales.json
+Rustic breakfast: Quantity Sold: 3, Total Sales: $63.96
+Sandwich with salad: Quantity Sold: 5, Total Sales: $112.40
+Raw legums: Quantity Sold: 21, Total Sales: $359.31
+Fresh stawberry: Quantity Sold: 5, Total Sales: $142.95
+Pears juice: Quantity Sold: 3, Total Sales: $58.47
+Green smoothie: Quantity Sold: 22, Total Sales: $388.96
+Cuban sandwiche: Quantity Sold: 11, Total Sales: $203.50
+Hazelnut in black ceramic bowl: Quantity Sold: 7, Total Sales: $191.45
+Smoothie with chia seeds: Quantity Sold: 3, Total Sales: $75.78
+Peaches on branch: Quantity Sold: 2, Total Sales: $51.24
+Pesto with basil: Quantity Sold: 2, Total Sales: $36.38
+Execution and calculus time: 2.47 seconds.
+(base) PS Z:\Maestria\Pruebas de software\Semana 5\A01793198_A5.2> python compute_sales.py TC1/TC1.ProductList.json TC1/TC1.Sales.json
+Rustic breakfast: Quantity Sold: 3, Total Sales: $63.96
+Sandwich with salad: Quantity Sold: 5, Total Sales: $112.40           
+Raw legums: Quantity Sold: 21, Total Sales: $359.31                   
+Fresh stawberry: Quantity Sold: 5, Total Sales: $142.95               
+Pears juice: Quantity Sold: 3, Total Sales: $58.47                    
+Green smoothie: Quantity Sold: 22, Total Sales: $388.96               
+Cuban sandwiche: Quantity Sold: 11, Total Sales: $203.50              
+Hazelnut in black ceramic bowl: Quantity Sold: 7, Total Sales: $191.45
+Tomatoes: Quantity Sold: 2, Total Sales: $52.06
+Plums: Quantity Sold: 4, Total Sales: $76.72
+Corn: Quantity Sold: 19, Total Sales: $257.45
+French fries: Quantity Sold: 3, Total Sales: $54.96
+Ground beef meat burger: Quantity Sold: 4, Total Sales: $46.92
+Cherry: Quantity Sold: 4, Total Sales: $57.40
+Homemade bread: Quantity Sold: 6, Total Sales: $104.88
+Smoothie with chia seeds: Quantity Sold: 3, Total Sales: $75.78
+Peaches on branch: Quantity Sold: 2, Total Sales: $51.24
+Pesto with basil: Quantity Sold: 2, Total Sales: $36.38
+
+Grand Total of All Sales: $2481.86
+Execution and calculus time: 1.33 seconds.
+(base) PS Z:\Maestria\Pruebas de software\Semana 5\A01793198_A5.2> python compute_sales.py TC2/TC1.ProductList.json TC2/TC2.Sales.json
+Rustic breakfast: Quantity Sold: 200, Total Sales: $4264.00
+Sandwich with salad: Quantity Sold: 23, Total Sales: $517.04
+Raw legums: Quantity Sold: 13, Total Sales: $222.43
+Fresh stawberry: Quantity Sold: 221, Total Sales: $6318.39
+Green smoothie: Quantity Sold: 580, Total Sales: $10254.40
+Cuban sandwiche: Quantity Sold: 2, Total Sales: $37.00
+Hazelnut in black ceramic bowl: Quantity Sold: 7, Total Sales: $191.45
+Plums: Quantity Sold: 1231, Total Sales: $23610.58
+Fresh blueberries: Quantity Sold: 3790, Total Sales: $79627.90
+Corn: Quantity Sold: 1664, Total Sales: $22547.20
+French fries: Quantity Sold: 57, Total Sales: $1044.24
+Ground beef meat burger: Quantity Sold: 146, Total Sales: $1712.58
+Sweet fresh stawberry: Quantity Sold: 221, Total Sales: $6508.45
+Homemade bread: Quantity Sold: 466, Total Sales: $8145.68
+Smoothie with chia seeds: Quantity Sold: 61, Total Sales: $1540.86
+
+Grand Total of All Sales: $166568.23
+Execution and calculus time: 2.44 seconds.
+(base) PS Z:\Maestria\Pruebas de software\Semana 5\A01793198_A5.2> python compute_sales.py TC3/TC1.ProductList.json TC3/TC3.Sales.json
+Rustic breakfast: Quantity Sold: 200, Total Sales: $4264.00
+Sandwich with salad: Quantity Sold: 23, Total Sales: $517.04
+Raw legums: Quantity Sold: 13, Total Sales: $222.43
+Fresh stawberry: Quantity Sold: 221, Total Sales: $6318.39
+Green smoothie: Quantity Sold: 580, Total Sales: $10254.40
+Cuban sandwiche: Quantity Sold: 2, Total Sales: $37.00
+Hazelnut in black ceramic bowl: Quantity Sold: 7, Total Sales: $191.45
+Plums: Quantity Sold: 1231, Total Sales: $23610.58
+Fresh blueberries: Quantity Sold: 3744, Total Sales: $78661.44
+Corn: Quantity Sold: 1664, Total Sales: $22547.20
+French fries: Quantity Sold: 37, Total Sales: $677.84
+Ground beef meat burger: Quantity Sold: 146, Total Sales: $1712.58
+Sweet fresh stawberry: Quantity Sold: 221, Total Sales: $6508.45
+Homemade bread: Quantity Sold: 466, Total Sales: $8145.68
+Smoothie with chia seeds: Quantity Sold: 61, Total Sales: $1540.86
+Grand Total of All Sales: $165235.37
+Execution and calculus time: 3.72 seconds.
+(base) PS Z:\Maestria\Pruebas de software\Semana 5\A01793198_A5.2> pip install flake8
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: flake8 in c:\programdata\anaconda3\lib\site-packages (6.0.0)
+Requirement already satisfied: mccabe<0.8.0,>=0.7.0 in c:\programdata\anaconda3\lib\site-packages (from flake8) (0.7.0)
+Requirement already satisfied: pycodestyle<2.11.0,>=2.10.0 in c:\programdata\anaconda3\lib\site-packages (from flake8) (2.10.0)
+Requirement already satisfied: pyflakes<3.1.0,>=3.0.0 in c:\programdata\anaconda3\lib\site-packages (from flake8) (3.0.1)
+
+[notice] A new release of pip is available: 23.3.2 -> 24.0
+[notice] To update, run: python.exe -m pip install --upgrade pip
+(base) PS Z:\Maestria\Pruebas de software\Semana 5\A01793198_A5.2> python.exe -m pip install --upgrade pip
+Requirement already satisfied: pip in c:\users\llara2\appdata\roaming\python\python310\site-packages (23.3.2)
+  Downloading pip-24.0-py3-none-any.whl.metadata (3.6 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 8.4 MB/s eta 0:00:00
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 23.3.2
+    Uninstalling pip-23.3.2:
+Successfully installed pip-24.0
+(base) PS Z:\Maestria\Pruebas de software\Semana 5\A01793198_A5.2> flake8 compute-sales.py
+compute-sales.py:0:1: E902 FileNotFoundError: [Errno 2] No such file or directory: 'compute-sales.py'
+(base) PS Z:\Maestria\Pruebas de software\Semana 5\A01793198_A5.2> flake8 compute_sales.py
+compute_sales.py:28:80: E501 line too long (80 > 79 characters)
+compute_sales.py:39:80: E501 line too long (119 > 79 characters)
+compute_sales.py:55:80: E501 line too long (108 > 79 characters)
+compute_sales.py:63:80: E501 line too long (81 > 79 characters)
+compute_sales.py:68:80: E501 line too long (83 > 79 characters)
+(base) PS Z:\Maestria\Pruebas de software\Semana 5\A01793198_A5.2> flake8 compute_sales.py
+compute_sales.py:72:80: E501 line too long (83 > 79 characters)
+(base) PS Z:\Maestria\Pruebas de software\Semana 5\A01793198_A5.2> flake8 compute_sales.py
+(base) PS Z:\Maestria\Pruebas de software\Semana 5\A01793198_A5.2> pylint flake8 computeSales.py
+************* Module computeSales.py
+computeSales.py:1:0: F0001: No module named computeSales.py (fatal)
+************* Module site-packages.flake8.checker
+C:\ProgramData\anaconda3\lib\site-packages\flake8\checker.py:57:4: C0103: Constant name "_mp_plugins" doesn't conform to UPPER_CASE naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\checker.py:57:4: C0103: Constant name "_mp_options" doesn't conform to UPPER_CASE naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\checker.py:57:4: W0603: Using the global statement (global-statement)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\checker.py:66:4: C0103: Constant name "_mp_plugins" doesn't conform to UPPER_CASE naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\checker.py:66:4: C0103: Constant name "_mp_options" doesn't conform to UPPER_CASE naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\checker.py:66:4: W0603: Using the global statement (global-statement)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\checker.py:84:0: R0902: Too many instance attributes (9/7) (too-many-instance-attributes)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\checker.py:239:12: W0707: Consider explicitly re-raising using 'except KeyboardInterrupt as exc' and 'raise exceptions.EarlyQuit('Early quit while running checks') from exc' (raise-m
+issing-from)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\checker.py:249:8: W0201: Attribute 'filenames' defined outside __init__ (attribute-defined-outside-init)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\checker.py:263:0: R0902: Too many instance attributes (8/7) (too-many-instance-attributes)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\checker.py:298:8: C0103: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\checker.py:336:8: C0103: Variable name "ae" doesn't conform to snake_case naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\checker.py:407:16: R1730: Consider using 'column = min(column, logical_line_length)' instead of unnecessary if block (consider-using-min-builtin)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\checker.py:437:8: W0612: Unused variable 'comments' (unused-variable)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\checker.py:526:8: C0103: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
+************* Module site-packages.flake8.processor
+C:\ProgramData\anaconda3\lib\site-packages\flake8\processor.py:29:0: R0902: Too many instance attributes (25/7) (too-many-instance-attributes)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\processor.py:181:4: R0914: Too many local variables (17/15) (too-many-locals)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\processor.py:254:16: R1720: Unnecessary "else" after "raise", remove the "else" and de-indent the code inside it (no-else-raise)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\processor.py:291:20: C0103: Variable name "tp" doesn't conform to snake_case naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\processor.py:339:49: C0103: Variable name "fd" doesn't conform to snake_case naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\processor.py:344:60: C0103: Variable name "fd" doesn't conform to snake_case naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\processor.py:358:8: R1705: Unnecessary "elif" after "return", remove the leading "el" from "elif" (no-else-return)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\processor.py:29:0: R0904: Too many public methods (21/20) (too-many-public-methods)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\processor.py:405:4: R1705: Unnecessary "elif" after "return", remove the leading "el" from "elif" (no-else-return)
+************* Module site-packages.flake8.style_guide
+C:\ProgramData\anaconda3\lib\site-packages\flake8\style_guide.py:27:4: C0103: Class constant name "Explicitly" doesn't conform to UPPER_CASE naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\style_guide.py:28:4: C0103: Class constant name "Implicitly" doesn't conform to UPPER_CASE naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\style_guide.py:34:4: C0103: Class constant name "Explicitly" doesn't conform to UPPER_CASE naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\style_guide.py:35:4: C0103: Class constant name "Implicitly" doesn't conform to UPPER_CASE naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\style_guide.py:41:4: C0103: Class constant name "Ignored" doesn't conform to UPPER_CASE naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\style_guide.py:42:4: C0103: Class constant name "Selected" doesn't conform to UPPER_CASE naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\style_guide.py:113:8: R1705: Unnecessary "elif" after "return", remove the leading "el" from "elif" (no-else-return)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\style_guide.py:132:8: R1705: Unnecessary "elif" after "return", remove the leading "el" from "elif" (no-else-return)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\style_guide.py:150:8: R1705: Unnecessary "elif" after "return", remove the leading "el" from "elif" (no-else-return)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\style_guide.py:174:12: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\style_guide.py:139:4: R0911: Too many return statements (7/6) (too-many-return-statements)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\style_guide.py:264:4: R0913: Too many arguments (7/5) (too-many-arguments)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\style_guide.py:302:4: R0913: Too many arguments (6/5) (too-many-arguments)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\style_guide.py:381:4: R0913: Too many arguments (7/5) (too-many-arguments)
+************* Module site-packages.flake8.utils
+C:\ProgramData\anaconda3\lib\site-packages\flake8\utils.py:98:4: C0115: Missing class docstring (missing-class-docstring)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\utils.py:98:4: R0903: Too few public methods (0/2) (too-few-public-methods)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\utils.py:78:0: R0912: Too many branches (13/12) (too-many-branches)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\utils.py:189:4: C0103: Variable name "fd" doesn't conform to snake_case naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\utils.py:271:11: C0209: Formatting a regular string which could be a f-string (consider-using-f-string)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\utils.py:278:24: C0103: Argument name "s" doesn't conform to snake_case naming style (invalid-name)
+************* Module site-packages.flake8.api.legacy
+C:\ProgramData\anaconda3\lib\site-packages\flake8\api\legacy.py:170:8: W0613: Unused argument 'lines' (unused-argument)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\api\legacy.py:171:8: W0613: Unused argument 'expected' (unused-argument)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\api\legacy.py:172:8: W0613: Unused argument 'line_offset' (unused-argument)
+************* Module site-packages.flake8.formatting.base
+C:\ProgramData\anaconda3\lib\site-packages\flake8\formatting\base.py:84:29: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\formatting\base.py:84:29: R1732: Consider using 'with' for resource-allocating operations (consider-using-with)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\formatting\base.py:113:0: W1404: Implicit string concatenation found in call (implicit-str-concat)
+************* Module site-packages.flake8.formatting.default
+C:\ProgramData\anaconda3\lib\site-packages\flake8\formatting\default.py:95:8: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+************* Module site-packages.flake8.formatting._windows_color
+C:\ProgramData\anaconda3\lib\site-packages\flake8\formatting\_windows_color.py:12:8: C0415: Import outside toplevel (ctypes.POINTER) (import-outside-toplevel)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\formatting\_windows_color.py:13:8: C0415: Import outside toplevel (ctypes.windll) (import-outside-toplevel)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\formatting\_windows_color.py:14:8: C0415: Import outside toplevel (ctypes.WinError) (import-outside-toplevel)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\formatting\_windows_color.py:15:8: C0415: Import outside toplevel (ctypes.WINFUNCTYPE) (import-outside-toplevel)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\formatting\_windows_color.py:16:8: C0415: Import outside toplevel (ctypes.wintypes.BOOL) (import-outside-toplevel)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\formatting\_windows_color.py:17:8: C0415: Import outside toplevel (ctypes.wintypes.DWORD) (import-outside-toplevel)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\formatting\_windows_color.py:18:8: C0415: Import outside toplevel (ctypes.wintypes.HANDLE) (import-outside-toplevel)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\formatting\_windows_color.py:20:8: C0103: Variable name "STD_ERROR_HANDLE" doesn't conform to snake_case naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\formatting\_windows_color.py:21:8: C0103: Variable name "ENABLE_VIRTUAL_TERMINAL_PROCESSING" doesn't conform to snake_case naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\formatting\_windows_color.py:23:34: W0613: Unused argument 'func' (unused-argument)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\formatting\_windows_color.py:28:8: C0103: Variable name "GetStdHandle" doesn't conform to snake_case naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\formatting\_windows_color.py:33:8: C0103: Variable name "GetConsoleMode" doesn't conform to snake_case naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\formatting\_windows_color.py:39:8: C0103: Variable name "SetConsoleMode" doesn't conform to snake_case naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\formatting\_windows_color.py:57:8: C0103: Constant name "terminal_supports_color" doesn't conform to UPPER_CASE naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\formatting\_windows_color.py:59:8: C0103: Constant name "terminal_supports_color" doesn't conform to UPPER_CASE naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\formatting\_windows_color.py:61:4: C0103: Constant name "terminal_supports_color" doesn't conform to UPPER_CASE naming style (invalid-name)
+************* Module site-packages.flake8.main.application
+C:\ProgramData\anaconda3\lib\site-packages\flake8\main\application.py:25:0: R0902: Too many instance attributes (10/7) (too-many-instance-attributes)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\main\application.py:63:8: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+************* Module site-packages.flake8.options.config
+C:\ProgramData\anaconda3\lib\site-packages\flake8\options\config.py:87:5: W0511: TODO: remove this and replace it with configuration modifying plugins (fixme)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\options\config.py:16:14: C0103: Argument name "s" doesn't conform to snake_case naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\options\config.py:18:4: C0103: Variable name "st" doesn't conform to snake_case naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\options\config.py:37:12: C0103: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\options\config.py:46:8: R1723: Unnecessary "else" after "break", remove the "else" and de-indent the code inside it (no-else-break)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\options\config.py:46:11: R1714: Consider merging these comparisons with 'in' by using 'new_dir_stat in (dir_stat, home_stat)'. Use a set instead if elements are hashable. (consider-u
+sing-in)
+************* Module site-packages.flake8.options.manager
+C:\ProgramData\anaconda3\lib\site-packages\flake8\options\manager.py:243:5: W0511: TODO: maybe make this a free function to reduce api surface area (fixme)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\options\manager.py:41:0: R0902: Too many instance attributes (19/7) (too-many-instance-attributes)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\options\manager.py:44:4: R0913: Too many arguments (16/5) (too-many-arguments)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\options\manager.py:44:4: R0914: Too many local variables (16/15) (too-many-locals)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\options\manager.py:51:8: W0622: Redefining built-in 'type' (redefined-builtin)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\options\manager.py:56:8: W0622: Redefining built-in 'help' (redefined-builtin)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\options\manager.py:185:15: C0103: Variable name "v" doesn't conform to snake_case naming style (invalid-name)
+************* Module site-packages.flake8.options.parse_args
+C:\ProgramData\anaconda3\lib\site-packages\flake8\options\parse_args.py:22:5: W0511: XXX (ericvw): Special case "forwarding" the output file option so (fixme)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\options\parse_args.py:60:9: W0511: XXX: ideally we wouldn't have two forms of parse_options (fixme)
+************* Module site-packages.flake8.plugins.finder
+C:\ProgramData\anaconda3\lib\site-packages\flake8\plugins\finder.py:114:4: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\plugins\finder.py:123:8: W0120: Else clause on loop without a break statement, remove the else and de-indent all the code inside it (useless-else-on-loop)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\plugins\finder.py:158:8: C0103: Variable name "ep" doesn't conform to snake_case naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\plugins\finder.py:190:8: R1724: Unnecessary "else" after "continue", remove the "else" and de-indent the code inside it (no-else-continue)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\plugins\finder.py:195:8: R1724: Unnecessary "elif" after "continue", remove the leading "el" from "elif" (no-else-continue)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\plugins\finder.py:208:12: C0103: Variable name "ep" doesn't conform to snake_case naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\plugins\finder.py:224:12: C0103: Variable name "ep" doesn't conform to snake_case naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\plugins\finder.py:292:4: C0103: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\plugins\finder.py:293:8: W0707: Consider explicitly re-raising using 'raise FailedToLoadPlugin(plugin.package, e) from e' (raise-missing-from)
+************* Module site-packages.flake8.plugins.pycodestyle
+C:\ProgramData\anaconda3\lib\site-packages\flake8\plugins\pycodestyle.py:25:0: C0301: Line too long (107/100) (line-too-long)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\plugins\pycodestyle.py:26:0: C0301: Line too long (111/100) (line-too-long)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\plugins\pycodestyle.py:27:0: C0301: Line too long (101/100) (line-too-long)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\plugins\pycodestyle.py:28:0: C0301: Line too long (107/100) (line-too-long)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\plugins\pycodestyle.py:29:0: C0301: Line too long (113/100) (line-too-long)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\plugins\pycodestyle.py:36:0: C0301: Line too long (123/100) (line-too-long)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\plugins\pycodestyle.py:64:0: C0301: Line too long (191/100) (line-too-long)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\plugins\pycodestyle.py:71:0: C0301: Line too long (142/100) (line-too-long)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\plugins\pycodestyle.py:80:0: C0301: Line too long (108/100) (line-too-long)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\plugins\pycodestyle.py:102:0: C0301: Line too long (106/100) (line-too-long)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\plugins\pycodestyle.py:42:0: R0913: Too many arguments (17/5) (too-many-arguments)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\plugins\pycodestyle.py:42:0: R0914: Too many local variables (17/15) (too-many-locals)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\plugins\pycodestyle.py:91:0: R0913: Too many arguments (8/5) (too-many-arguments)
+************* Module site-packages.flake8.plugins.pyflakes
+C:\ProgramData\anaconda3\lib\site-packages\flake8\plugins\pyflakes.py:178:16: C0209: Formatting a regular string which could be a f-string (consider-using-f-string)
+
+-----------------------------------
+Your code has been rated at 0.00/10
+
+************* Module compute_sales
+compute_sales.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+compute_sales.py:6:0: C0116: Missing function or method docstring (missing-function-docstring)
+compute_sales.py:10:4: C0103: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
+compute_sales.py:37:0: C0116: Missing function or method docstring (missing-function-docstring)
+compute_sales.py:45:0: C0116: Missing function or method docstring (missing-function-docstring)
+
+-----------------------------------
+Your code has been rated at 8.91/10
+
+(base) PS Z:\Maestria\Pruebas de software\Semana 5\A01793198_A5.2> pylint compute_sales.py
+
+-------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 8.91/10, +1.09)
+
+(base) PS Z:\Maestria\Pruebas de software\Semana 5\A01793198_A5.2> pylint flake8 computeSales.py
+************* Module computeSales.py
+computeSales.py:1:0: F0001: No module named computeSales.py (fatal)
+************* Module site-packages.flake8.checker
+C:\ProgramData\anaconda3\lib\site-packages\flake8\checker.py:57:4: C0103: Constant name "_mp_plugins" doesn't conform to UPPER_CASE naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\checker.py:57:4: C0103: Constant name "_mp_options" doesn't conform to UPPER_CASE naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\checker.py:57:4: W0603: Using the global statement (global-statement)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\checker.py:66:4: C0103: Constant name "_mp_plugins" doesn't conform to UPPER_CASE naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\checker.py:66:4: C0103: Constant name "_mp_options" doesn't conform to UPPER_CASE naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\checker.py:66:4: W0603: Using the global statement (global-statement)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\checker.py:84:0: R0902: Too many instance attributes (9/7) (too-many-instance-attributes)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\checker.py:239:12: W0707: Consider explicitly re-raising using 'except KeyboardInterrupt as exc' and 'raise exceptions.EarlyQuit('Early quit while running checks') from exc' (raise-m
+issing-from)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\checker.py:249:8: W0201: Attribute 'filenames' defined outside __init__ (attribute-defined-outside-init)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\checker.py:263:0: R0902: Too many instance attributes (8/7) (too-many-instance-attributes)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\checker.py:298:8: C0103: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\checker.py:336:8: C0103: Variable name "ae" doesn't conform to snake_case naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\checker.py:407:16: R1730: Consider using 'column = min(column, logical_line_length)' instead of unnecessary if block (consider-using-min-builtin)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\checker.py:437:8: W0612: Unused variable 'comments' (unused-variable)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\checker.py:526:8: C0103: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
+************* Module site-packages.flake8.processor
+C:\ProgramData\anaconda3\lib\site-packages\flake8\processor.py:29:0: R0902: Too many instance attributes (25/7) (too-many-instance-attributes)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\processor.py:181:4: R0914: Too many local variables (17/15) (too-many-locals)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\processor.py:254:16: R1720: Unnecessary "else" after "raise", remove the "else" and de-indent the code inside it (no-else-raise)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\processor.py:291:20: C0103: Variable name "tp" doesn't conform to snake_case naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\processor.py:339:49: C0103: Variable name "fd" doesn't conform to snake_case naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\processor.py:344:60: C0103: Variable name "fd" doesn't conform to snake_case naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\processor.py:358:8: R1705: Unnecessary "elif" after "return", remove the leading "el" from "elif" (no-else-return)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\processor.py:29:0: R0904: Too many public methods (21/20) (too-many-public-methods)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\processor.py:405:4: R1705: Unnecessary "elif" after "return", remove the leading "el" from "elif" (no-else-return)
+************* Module site-packages.flake8.style_guide
+C:\ProgramData\anaconda3\lib\site-packages\flake8\style_guide.py:27:4: C0103: Class constant name "Explicitly" doesn't conform to UPPER_CASE naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\style_guide.py:28:4: C0103: Class constant name "Implicitly" doesn't conform to UPPER_CASE naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\style_guide.py:34:4: C0103: Class constant name "Explicitly" doesn't conform to UPPER_CASE naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\style_guide.py:35:4: C0103: Class constant name "Implicitly" doesn't conform to UPPER_CASE naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\style_guide.py:41:4: C0103: Class constant name "Ignored" doesn't conform to UPPER_CASE naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\style_guide.py:42:4: C0103: Class constant name "Selected" doesn't conform to UPPER_CASE naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\style_guide.py:113:8: R1705: Unnecessary "elif" after "return", remove the leading "el" from "elif" (no-else-return)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\style_guide.py:132:8: R1705: Unnecessary "elif" after "return", remove the leading "el" from "elif" (no-else-return)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\style_guide.py:150:8: R1705: Unnecessary "elif" after "return", remove the leading "el" from "elif" (no-else-return)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\style_guide.py:174:12: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\style_guide.py:139:4: R0911: Too many return statements (7/6) (too-many-return-statements)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\style_guide.py:264:4: R0913: Too many arguments (7/5) (too-many-arguments)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\style_guide.py:302:4: R0913: Too many arguments (6/5) (too-many-arguments)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\style_guide.py:381:4: R0913: Too many arguments (7/5) (too-many-arguments)
+************* Module site-packages.flake8.utils
+C:\ProgramData\anaconda3\lib\site-packages\flake8\utils.py:98:4: C0115: Missing class docstring (missing-class-docstring)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\utils.py:98:4: R0903: Too few public methods (0/2) (too-few-public-methods)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\utils.py:78:0: R0912: Too many branches (13/12) (too-many-branches)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\utils.py:189:4: C0103: Variable name "fd" doesn't conform to snake_case naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\utils.py:271:11: C0209: Formatting a regular string which could be a f-string (consider-using-f-string)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\utils.py:278:24: C0103: Argument name "s" doesn't conform to snake_case naming style (invalid-name)
+************* Module site-packages.flake8.api.legacy
+C:\ProgramData\anaconda3\lib\site-packages\flake8\api\legacy.py:170:8: W0613: Unused argument 'lines' (unused-argument)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\api\legacy.py:171:8: W0613: Unused argument 'expected' (unused-argument)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\api\legacy.py:172:8: W0613: Unused argument 'line_offset' (unused-argument)
+************* Module site-packages.flake8.formatting.base
+C:\ProgramData\anaconda3\lib\site-packages\flake8\formatting\base.py:84:29: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\formatting\base.py:84:29: R1732: Consider using 'with' for resource-allocating operations (consider-using-with)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\formatting\base.py:113:0: W1404: Implicit string concatenation found in call (implicit-str-concat)
+************* Module site-packages.flake8.formatting.default
+C:\ProgramData\anaconda3\lib\site-packages\flake8\formatting\default.py:95:8: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+************* Module site-packages.flake8.formatting._windows_color
+C:\ProgramData\anaconda3\lib\site-packages\flake8\formatting\_windows_color.py:12:8: C0415: Import outside toplevel (ctypes.POINTER) (import-outside-toplevel)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\formatting\_windows_color.py:13:8: C0415: Import outside toplevel (ctypes.windll) (import-outside-toplevel)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\formatting\_windows_color.py:14:8: C0415: Import outside toplevel (ctypes.WinError) (import-outside-toplevel)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\formatting\_windows_color.py:15:8: C0415: Import outside toplevel (ctypes.WINFUNCTYPE) (import-outside-toplevel)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\formatting\_windows_color.py:16:8: C0415: Import outside toplevel (ctypes.wintypes.BOOL) (import-outside-toplevel)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\formatting\_windows_color.py:17:8: C0415: Import outside toplevel (ctypes.wintypes.DWORD) (import-outside-toplevel)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\formatting\_windows_color.py:18:8: C0415: Import outside toplevel (ctypes.wintypes.HANDLE) (import-outside-toplevel)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\formatting\_windows_color.py:20:8: C0103: Variable name "STD_ERROR_HANDLE" doesn't conform to snake_case naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\formatting\_windows_color.py:21:8: C0103: Variable name "ENABLE_VIRTUAL_TERMINAL_PROCESSING" doesn't conform to snake_case naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\formatting\_windows_color.py:23:34: W0613: Unused argument 'func' (unused-argument)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\formatting\_windows_color.py:28:8: C0103: Variable name "GetStdHandle" doesn't conform to snake_case naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\formatting\_windows_color.py:33:8: C0103: Variable name "GetConsoleMode" doesn't conform to snake_case naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\formatting\_windows_color.py:39:8: C0103: Variable name "SetConsoleMode" doesn't conform to snake_case naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\formatting\_windows_color.py:57:8: C0103: Constant name "terminal_supports_color" doesn't conform to UPPER_CASE naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\formatting\_windows_color.py:59:8: C0103: Constant name "terminal_supports_color" doesn't conform to UPPER_CASE naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\formatting\_windows_color.py:61:4: C0103: Constant name "terminal_supports_color" doesn't conform to UPPER_CASE naming style (invalid-name)
+************* Module site-packages.flake8.main.application
+C:\ProgramData\anaconda3\lib\site-packages\flake8\main\application.py:25:0: R0902: Too many instance attributes (10/7) (too-many-instance-attributes)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\main\application.py:63:8: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+************* Module site-packages.flake8.options.config
+C:\ProgramData\anaconda3\lib\site-packages\flake8\options\config.py:87:5: W0511: TODO: remove this and replace it with configuration modifying plugins (fixme)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\options\config.py:16:14: C0103: Argument name "s" doesn't conform to snake_case naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\options\config.py:18:4: C0103: Variable name "st" doesn't conform to snake_case naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\options\config.py:37:12: C0103: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\options\config.py:46:8: R1723: Unnecessary "else" after "break", remove the "else" and de-indent the code inside it (no-else-break)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\options\config.py:46:11: R1714: Consider merging these comparisons with 'in' by using 'new_dir_stat in (dir_stat, home_stat)'. Use a set instead if elements are hashable. (consider-u
+sing-in)
+************* Module site-packages.flake8.options.manager
+C:\ProgramData\anaconda3\lib\site-packages\flake8\options\manager.py:243:5: W0511: TODO: maybe make this a free function to reduce api surface area (fixme)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\options\manager.py:41:0: R0902: Too many instance attributes (19/7) (too-many-instance-attributes)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\options\manager.py:44:4: R0913: Too many arguments (16/5) (too-many-arguments)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\options\manager.py:44:4: R0914: Too many local variables (16/15) (too-many-locals)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\options\manager.py:51:8: W0622: Redefining built-in 'type' (redefined-builtin)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\options\manager.py:56:8: W0622: Redefining built-in 'help' (redefined-builtin)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\options\manager.py:185:15: C0103: Variable name "v" doesn't conform to snake_case naming style (invalid-name)
+************* Module site-packages.flake8.options.parse_args
+C:\ProgramData\anaconda3\lib\site-packages\flake8\options\parse_args.py:22:5: W0511: XXX (ericvw): Special case "forwarding" the output file option so (fixme)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\options\parse_args.py:60:9: W0511: XXX: ideally we wouldn't have two forms of parse_options (fixme)
+************* Module site-packages.flake8.plugins.finder
+C:\ProgramData\anaconda3\lib\site-packages\flake8\plugins\finder.py:114:4: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\plugins\finder.py:123:8: W0120: Else clause on loop without a break statement, remove the else and de-indent all the code inside it (useless-else-on-loop)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\plugins\finder.py:158:8: C0103: Variable name "ep" doesn't conform to snake_case naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\plugins\finder.py:190:8: R1724: Unnecessary "else" after "continue", remove the "else" and de-indent the code inside it (no-else-continue)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\plugins\finder.py:195:8: R1724: Unnecessary "elif" after "continue", remove the leading "el" from "elif" (no-else-continue)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\plugins\finder.py:208:12: C0103: Variable name "ep" doesn't conform to snake_case naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\plugins\finder.py:224:12: C0103: Variable name "ep" doesn't conform to snake_case naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\plugins\finder.py:292:4: C0103: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\plugins\finder.py:293:8: W0707: Consider explicitly re-raising using 'raise FailedToLoadPlugin(plugin.package, e) from e' (raise-missing-from)
+************* Module site-packages.flake8.plugins.pycodestyle
+C:\ProgramData\anaconda3\lib\site-packages\flake8\plugins\pycodestyle.py:25:0: C0301: Line too long (107/100) (line-too-long)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\plugins\pycodestyle.py:26:0: C0301: Line too long (111/100) (line-too-long)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\plugins\pycodestyle.py:27:0: C0301: Line too long (101/100) (line-too-long)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\plugins\pycodestyle.py:28:0: C0301: Line too long (107/100) (line-too-long)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\plugins\pycodestyle.py:29:0: C0301: Line too long (113/100) (line-too-long)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\plugins\pycodestyle.py:36:0: C0301: Line too long (123/100) (line-too-long)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\plugins\pycodestyle.py:64:0: C0301: Line too long (191/100) (line-too-long)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\plugins\pycodestyle.py:71:0: C0301: Line too long (142/100) (line-too-long)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\plugins\pycodestyle.py:80:0: C0301: Line too long (108/100) (line-too-long)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\plugins\pycodestyle.py:102:0: C0301: Line too long (106/100) (line-too-long)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\plugins\pycodestyle.py:42:0: R0913: Too many arguments (17/5) (too-many-arguments)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\plugins\pycodestyle.py:42:0: R0914: Too many local variables (17/15) (too-many-locals)
+C:\ProgramData\anaconda3\lib\site-packages\flake8\plugins\pycodestyle.py:91:0: R0913: Too many arguments (8/5) (too-many-arguments)
+************* Module site-packages.flake8.plugins.pyflakes
+C:\ProgramData\anaconda3\lib\site-packages\flake8\plugins\pyflakes.py:178:16: C0209: Formatting a regular string which could be a f-string (consider-using-f-string)
+
+Your code has been rated at 0.00/10 (previous run: 0.00/10, +0.00)
+
+(base) PS Z:\Maestria\Pruebas de software\Semana 5\A01793198_A5.2> flake8 compute_sales.py                
+compute_sales.py:39:80: E501 line too long (80 > 79 characters)
+compute_sales.py:46:1: E302 expected 2 blank lines, found 1
+compute_sales.py:56:1: E302 expected 2 blank lines, found 1
+compute_sales.py:81:80: E501 line too long (81 > 79 characters)
+compute_sales.py:83:1: E305 expected 2 blank lines after class or function definition, found 1
+compute_sales.py:85:80: E501 line too long (83 > 79 characters)
+(base) PS Z:\Maestria\Pruebas de software\Semana 5\A01793198_A5.2> flake8 compute_sales.py
+compute_sales.py:41:80: E501 line too long (80 > 79 characters)
+compute_sales.py:85:80: E501 line too long (81 > 79 characters)
+compute_sales.py:90:80: E501 line too long (83 > 79 characters)
+(base) PS Z:\Maestria\Pruebas de software\Semana 5\A01793198_A5.2> flake8 compute_sales.py
+(base) PS Z:\Maestria\Pruebas de software\Semana 5\A01793198_A5.2> pylint compute_sales.py      
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+(base) PS Z:\Maestria\Pruebas de software\Semana 5\A01793198_A5.2>
