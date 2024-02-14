@@ -1,0 +1,1266 @@
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> pylint customer.py
+************* Module customer
+customer.py:77:12: W1203: Use lazy % formatting in logging functions (logging-fstring-interpolation)
+customer.py:80:12: W1203: Use lazy % formatting in logging functions (logging-fstring-interpolation)
+
+------------------------------------------------------------------
+Your code has been rated at 9.62/10 (previous run: 9.62/10, +0.00)
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> pylint customer.py
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> pylint customer.py
+customer.py:77:12: W1203: Use lazy % formatting in logging functions (logging-fstring-interpolation)
+customer.py:80:12: W1203: Use lazy % formatting in logging functions (logging-fstring-interpolation)
+
+------------------------------------------------------------------
+Your code has been rated at 9.62/10 (previous run: 9.62/10, +0.00)
+
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> pylint customer.py
+customer.py:77:26: W1309: Using an f-string that does not have any interpolated variables (f-string-without-interpolation)
+customer.py:80:12: W1203: Use lazy % formatting in logging functions (logging-fstring-interpolation)
+
+------------------------------------------------------------------
+Your code has been rated at 9.62/10 (previous run: 9.62/10, +0.00)
+
+************* Module customer
+customer.py:80:12: W1203: Use lazy % formatting in logging functions (logging-fstring-interpolation)
+
+------------------------------------------------------------------
+Your code has been rated at 9.81/10 (previous run: 9.62/10, +0.19)
+
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> python -m unittest test_customer.py
+......F.....
+======================================================================
+FAIL: test_load_customers_file_not_found (test_customer.TestCustomer)
+Test handling of FileNotFoundError
+----------------------------------------------------------------------
+Actual: error('Archivo %s no encontrado. Se iniciará con una lista vacía.', 'nonexistent_file.json')
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.263s
+FAILED (failures=1)
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> python -m unittest test_customer.py
+............
+----------------------------------------------------------------------
+Ran 12 tests in 0.069s
+
+OK
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> pylint customer.py
+
+-------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 9.81/10, +0.19)
+
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> python -m unittest test_customer.py
+........F...
+======================================================================
+FAIL: test_load_customers_with_json_decode_error (test_customer.TestCustomer)
+Test handling of JSONDecodeError
+----------------------------------------------------------------------
+  File "Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2\test_customer.py", line 103, in test_load_customers_with_json_decode_error
+    mock_log_error.assert_called_with("Error al decodificar "
+  File "C:\ProgramData\anaconda3\lib\unittest\mock.py", line 929, in assert_called_with
+    raise AssertionError(_error_message()) from cause
+AssertionError: expected call not found.
+Expected: error('Error al decodificar JSON en invalid_json.json.')
+Actual: error('Error al decodificar JSON en %s.', 'invalid_json.json')
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.050s
+
+FAILED (failures=1)
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> python -m unittest test_customer.py
+........F...
+======================================================================
+FAIL: test_load_customers_with_json_decode_error (test_customer.TestCustomer)
+Test handling of JSONDecodeError
+----------------------------------------------------------------------
+  File "Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2\test_customer.py", line 104, in test_load_customers_with_json_decode_error
+    mock_log_error.assert_called_with(
+  File "C:\ProgramData\anaconda3\lib\unittest\mock.py", line 929, in assert_called_with
+    raise AssertionError(_error_message()) from cause
+AssertionError: expected call not found.
+Actual: error('Error al decodificar JSON en %s.', 'invalid_json.json')
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.038s
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> python -m unittest test_customer.py
+............
+----------------------------------------------------------------------
+Ran 12 tests in 0.033s
+
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> pylint customer.py
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> flake8 customer.py
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> coverage run -m unittest discover
+................................................
+----------------------------------------------------------------------
+Ran 48 tests in 0.215s
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> coverage report
+Name                  Stmts   Miss  Cover
+-----------------------------------------
+customer.py              57      0   100%
+hotel.py                 72      0   100%
+reservation.py           61      2    97%
+test_customer.py         74      1    99%
+test_hotel.py           138      3    98%
+test_reservation.py      96      1    99%
+-----------------------------------------
+TOTAL                   498      7    99%
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> flake8 hotel.py
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> pylint hotel.py
+************* Module hotel
+hotel.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+hotel.py:5:0: C0115: Missing class docstring (missing-class-docstring)
+hotel.py:15:4: C0116: Missing function or method docstring (missing-function-docstring)
+hotel.py:23:4: C0116: Missing function or method docstring (missing-function-docstring)
+hotel.py:30:4: C0116: Missing function or method docstring (missing-function-docstring)
+hotel.py:34:4: C0116: Missing function or method docstring (missing-function-docstring)
+hotel.py:40:4: C0116: Missing function or method docstring (missing-function-docstring)
+hotel.py:45:4: C0116: Missing function or method docstring (missing-function-docstring)
+hotel.py:55:4: C0116: Missing function or method docstring (missing-function-docstring)
+hotel.py:77:4: C0116: Missing function or method docstring (missing-function-docstring)
+hotel.py:77:4: E0213: Method 'save_hotels_to_file' should have "self" as first argument (no-self-argument)
+hotel.py:78:13: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
+hotel.py:82:4: C0116: Missing function or method docstring (missing-function-docstring)
+hotel.py:100:15: W0718: Catching too general exception Exception (broad-exception-caught)
+hotel.py:84:17: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
+hotel.py:92:16: C0103: Variable name "ve" doesn't conform to snake_case naming style (invalid-name)
+hotel.py:100:8: C0103: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
+
+-----------------------------------
+
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> pylint hotel.py
+************* Module hotel
+hotel.py:57:0: C0301: Line too long (175/100) (line-too-long)
+hotel.py:65:0: C0301: Line too long (153/100) (line-too-long)
+hotel.py:67:0: C0301: Line too long (132/100) (line-too-long)
+hotel.py:93:0: C0301: Line too long (104/100) (line-too-long)
+hotel.py:100:15: W0718: Catching too general exception Exception (broad-exception-caught)
+
+Your code has been rated at 9.28/10 (previous run: 6.81/10, +2.46)
+
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> pylint hotel.py
+************* Module hotel
+hotel.py:58:0: C0301: Line too long (102/100) (line-too-long)
+hotel.py:66:0: C0301: Line too long (102/100) (line-too-long)
+hotel.py:97:0: C0301: Line too long (104/100) (line-too-long)
+
+------------------------------------------------------------------
+Your code has been rated at 9.42/10 (previous run: 9.28/10, +0.14)
+
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> pylint hotel.py
+************* Module hotel
+hotel.py:106:15: W0718: Catching too general exception Exception (broad-exception-caught)
+
+------------------------------------------------------------------
+Your code has been rated at 9.71/10 (previous run: 9.42/10, +0.29)
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> pylint hotel.py
+************* Module hotel
+hotel.py:107:15: W0718: Catching too general exception Exception (broad-exception-caught)
+
+------------------------------------------------------------------
+Your code has been rated at 9.86/10 (previous run: 9.71/10, +0.14)
+
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> pylint hotel.py
+
+-------------------------------------------------------------------
+
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> flake8 hotel.py
+hotel.py:56:80: E501 line too long (83 > 79 characters)
+hotel.py:57:80: E501 line too long (94 > 79 characters)
+hotel.py:58:80: E501 line too long (89 > 79 characters)
+hotel.py:67:80: E501 line too long (89 > 79 characters)
+hotel.py:68:80: E501 line too long (90 > 79 characters)
+hotel.py:69:80: E501 line too long (88 > 79 characters)
+hotel.py:72:80: E501 line too long (81 > 79 characters)
+hotel.py:99:80: E501 line too long (80 > 79 characters)
+hotel.py:104:80: E501 line too long (99 > 79 characters)
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> flake8 hotel.py
+hotel.py:61:5: E125 continuation line with same indent as next logical line
+hotel.py:69:80: E501 line too long (89 > 79 characters)
+hotel.py:70:80: E501 line too long (90 > 79 characters)
+hotel.py:73:80: E501 line too long (83 > 79 characters)
+hotel.py:74:80: E501 line too long (81 > 79 characters)
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> flake8 hotel.py
+hotel.py:69:80: E501 line too long (89 > 79 characters)
+hotel.py:70:80: E501 line too long (90 > 79 characters)
+hotel.py:71:80: E501 line too long (88 > 79 characters)
+hotel.py:74:80: E501 line too long (81 > 79 characters)
+hotel.py:101:80: E501 line too long (80 > 79 characters)
+hotel.py:106:80: E501 line too long (99 > 79 characters)
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> flake8 hotel.py
+hotel.py:103:80: E501 line too long (80 > 79 characters)
+hotel.py:108:80: E501 line too long (99 > 79 characters)
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> flake8 hotel.py
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> pylint hotel.py
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> coverage run -m unittest discover
+..........................E.....................
+    hotels_data = json.load(file)
+  File "C:\ProgramData\anaconda3\lib\unittest\mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "C:\ProgramData\anaconda3\lib\unittest\mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "C:\ProgramData\anaconda3\lib\unittest\mock.py", line 1173, in _execute_mock_call
+    raise effect
+Exception: Unexpected error
+
+----------------------------------------------------------------------
+Ran 48 tests in 0.262s
+
+FAILED (errors=1)
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> python -m unittest test_hotel.py
+..............E........
+======================================================================
+ERROR: test_load_hotels_with_unexpected_exception (test_hotel.TestHotel)
+Test handling of unexpected
+  File "Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2\test_hotel.py", line 261, in test_load_hotels_with_unexpected_exception
+    Hotel.load_hotels_from_file("dummy.json")
+  File "Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2\hotel.py", line 100, in load_hotels_from_file
+    hotels_data = json.load(file)
+    return self._mock_call(*args, **kwargs)
+  File "C:\ProgramData\anaconda3\lib\unittest\mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "C:\ProgramData\anaconda3\lib\unittest\mock.py", line 1173, in _execute_mock_call
+    raise effect
+
+----------------------------------------------------------------------
+Ran 23 tests in 0.109s
+
+FAILED (errors=1)
+......................
+----------------------------------------------------------------------
+Ran 22 tests in 0.082s
+
+OK
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> coverage run -m unittest discover
+...............................................
+----------------------------------------------------------------------
+Ran 47 tests in 0.158s
+
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> coverage report
+customer.py              57      0   100%
+hotel.py                 71      0   100%
+reservation.py           61      2    97%
+test_customer.py         74      1    99%
+test_hotel.py           133      3    98%
+test_reservation.py      96      1    99%
+-----------------------------------------
+TOTAL                   492      7    99%
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> coverage html
+Wrote HTML report to htmlcov\index.html
+reservation.py:62:4: C0116: Missing function or method docstring (missing-function-docstring)
+reservation.py:71:4: C0116: Missing function or method docstring (missing-function-docstring)
+reservation.py:72:13: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
+reservation.py:84:4: C0116: Missing function or method docstring (missing-function-docstring)
+reservation.py:86:17: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
+reservation.py:88:20: C0103: Variable name "r" doesn't conform to snake_case naming style (invalid-name)
+reservation.py:101:8: C0103: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
+
+-----------------------------------
+Your code has been rated at 7.37/10
+
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> pylint reservation.py
+************* Module reservation
+reservation.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+reservation.py:9:4: R0913: Too many arguments (7/5) (too-many-arguments)
+reservation.py:22:4: R0913: Too many arguments (7/5) (too-many-arguments)
+reservation.py:79:13: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
+reservation.py:94:17: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
+reservation.py:96:20: C0103: Variable name "r" doesn't conform to snake_case naming style (invalid-name)
+reservation.py:109:8: C0103: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
+
+------------------------------------------------------------------
+Your code has been rated at 8.60/10 (previous run: 7.37/10, +1.23)
+
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> pylint reservation.py
+************* Module reservation
+reservation.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+reservation.py:9:4: R0913: Too many arguments (7/5) (too-many-arguments)
+reservation.py:22:4: R0913: Too many arguments (7/5) (too-many-arguments)
+reservation.py:109:15: W0718: Catching too general exception Exception (broad-exception-caught)
+reservation.py:94:17: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
+reservation.py:96:20: C0103: Variable name "r" doesn't conform to snake_case naming style (invalid-name)
+reservation.py:109:8: C0103: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
+
+------------------------------------------------------------------
+Your code has been rated at 8.60/10 (previous run: 8.60/10, +0.00)
+
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> pylint reservation.py
+************* Module reservation
+reservation.py:23:4: R0913: Too many arguments (7/5) (too-many-arguments)
+reservation.py:80:13: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
+reservation.py:110:15: W0718: Catching too general exception Exception (broad-exception-caught)
+reservation.py:95:17: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
+reservation.py:97:20: C0103: Variable name "r" doesn't conform to snake_case naming style (invalid-name)
+reservation.py:110:8: C0103: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
+
+------------------------------------------------------------------
+
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> pylint reservation.py
+************* Module reservation
+reservation.py:10:4: R0913: Too many arguments (7/5) (too-many-arguments)
+reservation.py:23:4: R0913: Too many arguments (7/5) (too-many-arguments)
+reservation.py:110:15: W0718: Catching too general exception Exception (broad-exception-caught)
+reservation.py:97:20: C0103: Variable name "r" doesn't conform to snake_case naming style (invalid-name)
+
+------------------------------------------------------------------
+Your code has been rated at 9.12/10 (previous run: 8.77/10, +0.35)
+
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> pylint reservation.py
+************* Module reservation
+reservation.py:10:4: R0913: Too many arguments (7/5) (too-many-arguments)
+reservation.py:23:4: R0913: Too many arguments (7/5) (too-many-arguments)
+reservation.py:97:20: C0103: Variable name "r" doesn't conform to snake_case naming style (invalid-name)
+
+------------------------------------------------------------------
+Your code has been rated at 9.45/10 (previous run: 9.12/10, +0.33)
+
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> pylint reservation.py
+************* Module reservation
+reservation.py:10:4: R0913: Too many arguments (7/5) (too-many-arguments)
+reservation.py:23:4: R0913: Too many arguments (7/5) (too-many-arguments)
+
+------------------------------------------------------------------
+Your code has been rated at 9.64/10 (previous run: 9.45/10, +0.18)
+
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> python -m unittest test_reservation.py
+........E....
+======================================================================
+ERROR: test_load_reservations_unexpected_error (test_reservation.TestReservation)
+Test handling of an unexpected
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\ProgramData\anaconda3\lib\unittest\mock.py", line 1379, in patched
+    return func(*newargs, **newkeywargs)
+  File "Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2\test_reservation.py", line 198, in test_load_reservations_unexpected_error
+    Reservation.load_reservations_from_file("reservations.json")
+  File "Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2\reservation.py", line 96, in load_reservations_from_file
+    reservations_data = json.load(file)
+  File "C:\ProgramData\anaconda3\lib\unittest\mock.py", line 1114, in __call__
+  File "C:\ProgramData\anaconda3\lib\unittest\mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "C:\ProgramData\anaconda3\lib\unittest\mock.py", line 1173, in _execute_mock_call
+    raise effect
+Exception: Unexpected error
+----------------------------------------------------------------------
+Ran 13 tests in 0.131s
+
+FAILED (errors=1)
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> python -m unittest test_reservation.py
+............
+----------------------------------------------------------------------
+
+OK
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> pylint reservation.py
+************* Module reservation
+reservation.py:10:4: R0913: Too many arguments (7/5) (too-many-arguments)
+reservation.py:23:4: R0913: Too many arguments (7/5) (too-many-arguments)
+
+------------------------------------------------------------------
+Your code has been rated at 9.64/10 (previous run: 9.64/10, +0.00)
+
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> python -m unittest test_reservation.py
+.EEEEE..EEEE
+======================================================================
+ERROR: test_cancel_reservation (test_reservation.TestReservation)
+Probar la cancelación de una reservación.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2\test_reservation.py", line 30, in test_cancel_reservation
+    Reservation.create_reservation("R003", "H001", "102",
+TypeError: Reservation.create_reservation() takes 2 positional arguments but 7 were given
+
+======================================================================
+ERROR: test_create_reservation (test_reservation.TestReservation)
+Probar la creación de una reservación.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2\test_reservation.py", line 20, in test_create_reservation
+    reservation = Reservation.create_reservation("R001", "H001", "101",
+TypeError: Reservation.create_reservation() takes 2 positional arguments but 7 were given
+
+======================================================================
+ERROR: test_create_reservation_with_end_date_before_start_date (test_reservation.TestReservation)
+Probar que se lanza un ValueError si la
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2\test_reservation.py", line 92, in test_create_reservation_with_end_date_before_start_date
+    Reservation.create_reservation("R005", "H001", "102",
+TypeError: Reservation.create_reservation() takes 2 positional arguments but 7 were given
+
+======================================================================
+ERROR: test_create_reservation_with_existing_id (test_reservation.TestReservation)
+Probar que se lanza un ValueError
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2\test_reservation.py", line 101, in test_create_reservation_with_existing_id
+    Reservation.create_reservation("R006", "H001", "103", "C001",
+TypeError: Reservation.create_reservation() takes 2 positional arguments but 7 were given
+
+======================================================================
+ERROR: test_display_reservation_info (test_reservation.TestReservation)
+Test that display_reservation_info
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2\test_reservation.py", line 137, in test_display_reservation_info
+    self.reservation = Reservation.create_reservation(
+TypeError: Reservation.create_reservation() takes 2 positional arguments but 7 were given
+
+======================================================================
+ERROR: test_modify_reservation (test_reservation.TestReservation)
+Probar la modificación de una reservación.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2\test_reservation.py", line 39, in test_modify_reservation
+    reservation = Reservation.create_reservation("R004", "H001",
+TypeError: Reservation.create_reservation() takes 2 positional arguments but 7 were given
+
+======================================================================
+ERROR: test_reservation_conflict (test_reservation.TestReservation)
+Probar que no se pueden hacer reservaciones
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2\test_reservation.py", line 78, in test_reservation_conflict
+    Reservation.create_reservation("R100", "H001", "101",
+TypeError: Reservation.create_reservation() takes 2 positional arguments but 7 were given
+
+======================================================================
+ERROR: test_reservation_start_date_before_end_date (test_reservation.TestReservation)
+Test that a ValueError is raised if the start
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2\test_reservation.py", line 114, in test_reservation_start_date_before_end_date
+    Reservation("R0010", "H001", "101", "C001",
+TypeError: Reservation.__init__() takes 2 positional arguments but 7 were given
+
+======================================================================
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2\test_reservation.py", line 50, in test_save_and_load_reservations
+    Reservation.create_reservation("XCV", "H001", "101", "C001",
+TypeError: Reservation.create_reservation() takes 2 positional arguments but 7 were given
+
+----------------------------------------------------------------------
+
+FAILED (errors=9)
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> pylint reservation.py
+************* Module reservation
+reservation.py:7:0: C0115: Missing class docstring (missing-class-docstring)
+reservation.py:104:20: E1121: Too many positional arguments for classmethod call (too-many-function-args)
+------------------------------------------------------------------
+Your code has been rated at 9.05/10 (previous run: 9.64/10, -0.59)
+
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> pylint reservation.py
+************* Module reservation
+reservation.py:105:20: E1121: Too many positional arguments for classmethod call (too-many-function-args)
+------------------------------------------------------------------
+Your code has been rated at 9.21/10 (previous run: 9.05/10, +0.16)
+
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> pylint reservation.py
+reservation.py:105:20: E1121: Too many positional arguments for classmethod call (too-many-function-args)
+
+------------------------------------------------------------------
+Your code has been rated at 9.21/10 (previous run: 9.21/10, +0.00)
+
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> pylint reservation.py
+
+-------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 9.21/10, +0.79)
+
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> python -m unittest test_reservation.py
+.EEEEE..EEEE
+======================================================================
+ERROR: test_cancel_reservation (test_reservation.TestReservation)
+Probar la cancelación de una reservación.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2\test_reservation.py", line 30, in test_cancel_reservation
+    Reservation.create_reservation("R003", "H001", "102",
+TypeError: Reservation.create_reservation() takes 2 positional arguments but 7 were given
+
+======================================================================
+ERROR: test_create_reservation (test_reservation.TestReservation)
+Probar la creación de una reservación.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2\test_reservation.py", line 20, in test_create_reservation
+    reservation = Reservation.create_reservation("R001", "H001", "101",
+TypeError: Reservation.create_reservation() takes 2 positional arguments but 7 were given
+
+======================================================================
+ERROR: test_create_reservation_with_end_date_before_start_date (test_reservation.TestReservation)
+Probar que se lanza un ValueError si la
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2\test_reservation.py", line 92, in test_create_reservation_with_end_date_before_start_date
+    Reservation.create_reservation("R005", "H001", "102",
+TypeError: Reservation.create_reservation() takes 2 positional arguments but 7 were given
+
+======================================================================
+ERROR: test_create_reservation_with_existing_id (test_reservation.TestReservation)
+Probar que se lanza un ValueError
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2\test_reservation.py", line 101, in test_create_reservation_with_existing_id
+    Reservation.create_reservation("R006", "H001", "103", "C001",
+TypeError: Reservation.create_reservation() takes 2 positional arguments but 7 were given
+
+======================================================================
+ERROR: test_display_reservation_info (test_reservation.TestReservation)
+Test that display_reservation_info
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2\test_reservation.py", line 137, in test_display_reservation_info
+    self.reservation = Reservation.create_reservation(
+TypeError: Reservation.create_reservation() takes 2 positional arguments but 7 were given
+
+======================================================================
+ERROR: test_modify_reservation (test_reservation.TestReservation)
+Probar la modificación de una reservación.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2\test_reservation.py", line 39, in test_modify_reservation
+    reservation = Reservation.create_reservation("R004", "H001",
+TypeError: Reservation.create_reservation() takes 2 positional arguments but 7 were given
+
+======================================================================
+ERROR: test_reservation_conflict (test_reservation.TestReservation)
+Probar que no se pueden hacer reservaciones
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2\test_reservation.py", line 78, in test_reservation_conflict
+    Reservation.create_reservation("R100", "H001", "101",
+TypeError: Reservation.create_reservation() takes 2 positional arguments but 7 were given
+
+======================================================================
+ERROR: test_reservation_start_date_before_end_date (test_reservation.TestReservation)
+Test that a ValueError is raised if the start
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2\test_reservation.py", line 114, in test_reservation_start_date_before_end_date
+    Reservation("R0010", "H001", "101", "C001",
+TypeError: Reservation.__init__() takes 2 positional arguments but 7 were given
+
+======================================================================
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2\test_reservation.py", line 50, in test_save_and_load_reservations
+    Reservation.create_reservation("XCV", "H001", "101", "C001",
+TypeError: Reservation.create_reservation() takes 2 positional arguments but 7 were given
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.078s
+
+FAILED (errors=9)
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> python -m unittest test_reservation.py
+....F
+======================================================================
+FAIL: test_save_and_load_reservations (test_reservation.TestReservation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2\test_reservation.py", line 60, in test_save_and_load_reservations
+    self.assertEqual(len(Reservation.reservations), 7)
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.081s
+
+FAILED (failures=1)
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> pylint reservation.py
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> python -m unittest test_reservation.py
+....F
+======================================================================
+FAIL: test_save_and_load_reservations (test_reservation.TestReservation)
+Test para guardar y cargar reservaciones.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2\test_reservation.py", line 62, in test_save_and_load_reservations
+    self.assertEqual(Reservation.reservations[1].reservation_id, "R006")
+- R004
+?    ^
++ R006
+?    ^
+
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.059s
+
+FAILED (failures=1)
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> python -m unittest test_reservation.py
+....F
+======================================================================
+FAIL: test_save_and_load_reservations (test_reservation.TestReservation)
+Test para guardar y cargar reservaciones.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+    self.assertEqual(Reservation.reservations[2].reservation_id, "R00300")
+AssertionError: 'R100' != 'R00300'
+- R100
++ R00300
+
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.062s
+
+FAILED (failures=1)
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> python -m unittest test_reservation.py
+....F
+======================================================================
+FAIL: test_save_and_load_reservations (test_reservation.TestReservation)
+Test para guardar y cargar reservaciones.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+    self.assertEqual(Reservation.reservations[3].reservation_id, "R004")
+AssertionError: 'XCV' != 'R004'
+- XCV
++ R004
+
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.070s
+
+FAILED (failures=1)
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> python -m unittest test_reservation.py
+....E
+======================================================================
+ERROR: test_save_and_load_reservations (test_reservation.TestReservation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2\test_reservation.py", line 64, in test_save_and_load_reservations
+    self.assertEqual(Reservation.reservations[5].reservation_id, "XCV")
+IndexError: list index out of range
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.063s
+
+FAILED (errors=1)
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> python -m unittest test_reservation.py
+....F
+======================================================================
+FAIL: test_save_and_load_reservations (test_reservation.TestReservation)
+Test para guardar y cargar reservaciones.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+    self.assertEqual(Reservation.reservations[4].reservation_id, "R100")
+AssertionError: 'QWE' != 'R100'
+- QWE
++ R100
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.079s
+
+FAILED (failures=1)
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.053s
+
+OK
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> pylint reservation.py
+
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> flake8 reservation.py
+reservation.py:6:1: E302 expected 2 blank lines, found 1
+reservation.py:16:1: E302 expected 2 blank lines, found 1
+reservation.py:26:80: E501 line too long (93 > 79 characters)
+reservation.py:34:80: E501 line too long (91 > 79 characters)
+reservation.py:35:80: E501 line too long (87 > 79 characters)
+reservation.py:38:80: E501 line too long (81 > 79 characters)
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> flake8 reservation.py
+reservation.py:17:1: E302 expected 2 blank lines, found 1
+reservation.py:28:80: E501 line too long (89 > 79 characters)
+reservation.py:35:80: E501 line too long (91 > 79 characters)
+reservation.py:39:80: E501 line too long (81 > 79 characters)
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> flake8 reservation.py
+reservation.py:29:80: E501 line too long (89 > 79 characters)
+reservation.py:40:80: E501 line too long (81 > 79 characters)
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> flake8 reservation.py
+reservation.py:28:80: E501 line too long (81 > 79 characters)
+reservation.py:44:80: E501 line too long (81 > 79 characters)
+reservation.py:28:80: E501 line too long (81 > 79 characters)
+reservation.py:46:19: E127 continuation line over-indented for visual indent
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> flake8 reservation.py
+reservation.py:47:19: E127 continuation line over-indented for visual indent
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> flake8 reservation.py
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> pylint reservation.py
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> pylint test_reservation.py
+************* Module test_reservation
+test_reservation.py:20:0: C0301: Line too long (102/100) (line-too-long)
+test_reservation.py:35:0: C0301: Line too long (102/100) (line-too-long)
+test_reservation.py:70:0: C0301: Line too long (101/100) (line-too-long)
+test_reservation.py:72:0: C0301: Line too long (101/100) (line-too-long)
+test_reservation.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+test_reservation.py:9:0: C0115: Missing class docstring (missing-class-docstring)
+test_reservation.py:3:0: C0411: standard import "import datetime" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+test_reservation.py:4:0: C0411: standard import "import os" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+test_reservation.py:6:0: C0411: standard import "from io import StringIO" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+test_reservation.py:7:0: C0411: standard import "import json" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+test_reservation.py:5:0: W0611: Unused patch imported from unittest.mock (unused-import)
+test_reservation.py:5:0: W0611: Unused mock_open imported from unittest.mock (unused-import)
+test_reservation.py:6:0: W0611: Unused StringIO imported from io (unused-import)
+test_reservation.py:7:0: W0611: Unused import json (unused-import)
+
+-----------------------------------
+Your code has been rated at 7.17/10
+
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> pylint test_reservation.py
+************* Module test_reservation
+test_reservation.py:37:0: C0301: Line too long (102/100) (line-too-long)
+test_reservation.py:72:0: C0301: Line too long (101/100) (line-too-long)
+test_reservation.py:74:0: C0301: Line too long (101/100) (line-too-long)
+test_reservation.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+test_reservation.py:9:0: C0115: Missing class docstring (missing-class-docstring)
+test_reservation.py:3:0: C0411: standard import "import datetime" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+test_reservation.py:4:0: C0411: standard import "import os" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+test_reservation.py:6:0: C0411: standard import "from io import StringIO" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+test_reservation.py:7:0: C0411: standard import "import json" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+test_reservation.py:5:0: W0611: Unused patch imported from unittest.mock (unused-import)
+test_reservation.py:5:0: W0611: Unused mock_open imported from unittest.mock (unused-import)
+test_reservation.py:6:0: W0611: Unused StringIO imported from io (unused-import)
+test_reservation.py:7:0: W0611: Unused import json (unused-import)
+
+------------------------------------------------------------------
+Your code has been rated at 7.36/10 (previous run: 7.17/10, +0.19)
+
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> pylint test_reservation.py
+************* Module test_reservation
+test_reservation.py:73:0: C0301: Line too long (101/100) (line-too-long)
+test_reservation.py:75:0: C0301: Line too long (101/100) (line-too-long)
+test_reservation.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+test_reservation.py:9:0: C0115: Missing class docstring (missing-class-docstring)
+test_reservation.py:3:0: C0411: standard import "import datetime" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+test_reservation.py:4:0: C0411: standard import "import os" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+test_reservation.py:6:0: C0411: standard import "from io import StringIO" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+test_reservation.py:7:0: C0411: standard import "import json" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+test_reservation.py:5:0: W0611: Unused patch imported from unittest.mock (unused-import)
+test_reservation.py:5:0: W0611: Unused mock_open imported from unittest.mock (unused-import)
+test_reservation.py:6:0: W0611: Unused StringIO imported from io (unused-import)
+test_reservation.py:7:0: W0611: Unused import json (unused-import)
+
+------------------------------------------------------------------
+Your code has been rated at 7.55/10 (previous run: 7.36/10, +0.19)
+
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> pylint test_reservation.py
+************* Module test_reservation
+test_reservation.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+test_reservation.py:9:0: C0115: Missing class docstring (missing-class-docstring)
+test_reservation.py:3:0: C0411: standard import "import datetime" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+test_reservation.py:4:0: C0411: standard import "import os" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+test_reservation.py:6:0: C0411: standard import "from io import StringIO" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+test_reservation.py:7:0: C0411: standard import "import json" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+test_reservation.py:5:0: W0611: Unused patch imported from unittest.mock (unused-import)
+test_reservation.py:5:0: W0611: Unused mock_open imported from unittest.mock (unused-import)
+test_reservation.py:6:0: W0611: Unused StringIO imported from io (unused-import)
+test_reservation.py:7:0: W0611: Unused import json (unused-import)
+test_reservation.py:10:0: C0115: Missing class docstring (missing-class-docstring)
+test_reservation.py:6:0: C0411: standard import "from unittest.mock import patch, mock_open" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+test_reservation.py:7:0: C0411: standard import "from io import StringIO" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+test_reservation.py:4:0: W0611: Unused import json (unused-import)
+test_reservation.py:6:0: W0611: Unused patch imported from unittest.mock (unused-import)
+test_reservation.py:6:0: W0611: Unused mock_open imported from unittest.mock (unused-import)
+test_reservation.py:7:0: W0611: Unused StringIO imported from io (unused-import)
+
+------------------------------------------------------------------
+Your code has been rated at 8.49/10 (previous run: 7.92/10, +0.57)
+
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> pylint test_reservation.py
+************* Module test_reservation
+test_reservation.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+test_reservation.py:10:0: C0115: Missing class docstring (missing-class-docstring)
+test_reservation.py:6:0: C0411: standard import "from unittest.mock import patch, mock_open" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+test_reservation.py:7:0: C0411: standard import "from io import StringIO" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+test_reservation.py:4:0: W0611: Unused import json (unused-import)
+
+
+************* Module test_reservation
+test_reservation.py:20:0: C0301: Line too long (102/100) (line-too-long)
+test_reservation.py:35:0: C0301: Line too long (102/100) (line-too-long)
+test_reservation.py:57:0: C0301: Line too long (101/100) (line-too-long)
+test_reservation.py:59:0: C0301: Line too long (101/100) (line-too-long)
+test_reservation.py:64:0: C0301: Line too long (109/100) (line-too-long)
+test_reservation.py:72:0: C0301: Line too long (101/100) (line-too-long)
+test_reservation.py:74:0: C0301: Line too long (101/100) (line-too-long)
+test_reservation.py:79:0: C0301: Line too long (103/100) (line-too-long)
+test_reservation.py:5:0: C0411: standard import "from unittest.mock import patch, mock_open" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+test_reservation.py:6:0: C0411: standard import "from io import StringIO" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+test_reservation.py:7:0: C0411: standard import "import json" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+
+------------------------------------------------------------------
+Your code has been rated at 7.74/10 (previous run: 8.49/10, -0.75)
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.079s
+
+OK
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> flake8 reservation.py
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> pylint test_reservation.py
+************* Module test_reservation
+test_reservation.py:74:0: C0301: Line too long (101/100) (line-too-long)
+test_reservation.py:79:0: C0301: Line too long (103/100) (line-too-long)
+test_reservation.py:85:0: C0301: Line too long (101/100) (line-too-long)
+test_reservation.py:87:0: C0301: Line too long (303/100) (line-too-long)
+test_reservation.py:107:0: C0301: Line too long (105/100) (line-too-long)
+test_reservation.py:9:0: C0115: Missing class docstring (missing-class-docstring)
+test_reservation.py:102:71: W0613: Unused argument 'mock_file' (unused-argument)
+test_reservation.py:3:0: C0411: standard import "import datetime" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+test_reservation.py:4:0: C0411: standard import "import os" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+test_reservation.py:5:0: C0411: standard import "from unittest.mock import patch, mock_open" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+test_reservation.py:6:0: C0411: standard import "from io import StringIO" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+test_reservation.py:7:0: C0411: standard import "import json" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+
+------------------------------------------------------------------
+Your code has been rated at 7.74/10 (previous run: 7.74/10, +0.00)
+
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> pylint test_reservation.py
+************* Module test_reservation
+test_reservation.py:20:0: C0301: Line too long (102/100) (line-too-long)
+test_reservation.py:35:0: C0301: Line too long (102/100) (line-too-long)
+test_reservation.py:92:0: C0301: Line too long (101/100) (line-too-long)
+test_reservation.py:94:0: C0301: Line too long (303/100) (line-too-long)
+test_reservation.py:114:0: C0301: Line too long (105/100) (line-too-long)
+test_reservation.py:9:0: C0115: Missing class docstring (missing-class-docstring)
+test_reservation.py:109:71: W0613: Unused argument 'mock_file' (unused-argument)
+test_reservation.py:3:0: C0411: standard import "import datetime" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+test_reservation.py:4:0: C0411: standard import "import os" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+test_reservation.py:5:0: C0411: standard import "from unittest.mock import patch, mock_open" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+test_reservation.py:6:0: C0411: standard import "from io import StringIO" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+test_reservation.py:7:0: C0411: standard import "import json" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+
+------------------------------------------------------------------
+Your code has been rated at 8.45/10 (previous run: 7.74/10, +0.71)
+
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> pylint test_reservation.py
+************* Module test_reservation
+test_reservation.py:95:0: C0301: Line too long (101/100) (line-too-long)
+test_reservation.py:97:0: C0301: Line too long (303/100) (line-too-long)
+test_reservation.py:117:0: C0301: Line too long (105/100) (line-too-long)
+test_reservation.py:9:0: C0115: Missing class docstring (missing-class-docstring)
+test_reservation.py:112:71: W0613: Unused argument 'mock_file' (unused-argument)
+test_reservation.py:3:0: C0411: standard import "import datetime" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+test_reservation.py:4:0: C0411: standard import "import os" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+test_reservation.py:5:0: C0411: standard import "from unittest.mock import patch, mock_open" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+test_reservation.py:6:0: C0411: standard import "from io import StringIO" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+test_reservation.py:7:0: C0411: standard import "import json" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+
+------------------------------------------------------------------
+Your code has been rated at 8.69/10 (previous run: 8.45/10, +0.24)
+
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> pylint test_reservation.py
+************* Module test_reservation
+test_reservation.py:95:0: C0301: Line too long (101/100) (line-too-long)
+test_reservation.py:122:0: C0301: Line too long (105/100) (line-too-long)
+test_reservation.py:9:0: C0115: Missing class docstring (missing-class-docstring)
+test_reservation.py:117:71: W0613: Unused argument 'mock_file' (unused-argument)
+test_reservation.py:3:0: C0411: standard import "import datetime" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+test_reservation.py:4:0: C0411: standard import "import os" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+test_reservation.py:5:0: C0411: standard import "from unittest.mock import patch, mock_open" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+test_reservation.py:6:0: C0411: standard import "from io import StringIO" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+test_reservation.py:7:0: C0411: standard import "import json" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+
+------------------------------------------------------------------
+Your code has been rated at 8.81/10 (previous run: 8.69/10, +0.12)
+
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> pylint test_reservation.py
+************* Module test_reservation
+test_reservation.py:123:0: C0301: Line too long (105/100) (line-too-long)
+test_reservation.py:9:0: C0115: Missing class docstring (missing-class-docstring)
+test_reservation.py:118:71: W0613: Unused argument 'mock_file' (unused-argument)
+test_reservation.py:3:0: C0411: standard import "import datetime" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+test_reservation.py:4:0: C0411: standard import "import os" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+test_reservation.py:5:0: C0411: standard import "from unittest.mock import patch, mock_open" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+test_reservation.py:6:0: C0411: standard import "from io import StringIO" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+test_reservation.py:7:0: C0411: standard import "import json" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+
+------------------------------------------------------------------
+Your code has been rated at 8.93/10 (previous run: 8.81/10, +0.12)
+
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> pylint test_reservation.py
+************* Module test_reservation
+test_reservation.py:9:0: C0115: Missing class docstring (missing-class-docstring)
+test_reservation.py:118:71: W0613: Unused argument 'mock_file' (unused-argument)
+test_reservation.py:3:0: C0411: standard import "import datetime" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+test_reservation.py:4:0: C0411: standard import "import os" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+test_reservation.py:5:0: C0411: standard import "from unittest.mock import patch, mock_open" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+test_reservation.py:6:0: C0411: standard import "from io import StringIO" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+test_reservation.py:7:0: C0411: standard import "import json" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+
+------------------------------------------------------------------
+Your code has been rated at 9.05/10 (previous run: 8.93/10, +0.12)
+
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> pylint test_reservation.py
+test_reservation.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+test_reservation.py:9:0: C0115: Missing class docstring (missing-class-docstring)
+test_reservation.py:3:0: C0411: standard import "import datetime" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+test_reservation.py:4:0: C0411: standard import "import os" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+test_reservation.py:5:0: C0411: standard import "from unittest.mock import patch, mock_open" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+test_reservation.py:6:0: C0411: standard import "from io import StringIO" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+test_reservation.py:7:0: C0411: standard import "import json" should be placed before "from reservation import Reservation, ReservationData" (wrong-import-order)
+------------------------------------------------------------------
+Your code has been rated at 9.17/10 (previous run: 9.05/10, +0.12)
+
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> pylint test_reservation.py
+test_reservation.py:10:0: C0115: Missing class docstring (missing-class-docstring)
+
+------------------------------------------------------------------
+Your code has been rated at 9.76/10 (previous run: 9.17/10, +0.60)
+
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> pylint test_reservation.py
+
+-------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 9.76/10, +0.24)
+
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> flake8 reservation.py
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> pylint test_customer.py
+************* Module test_customer
+test_customer.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+test_customer.py:38:4: C0116: Missing function or method docstring (missing-function-docstring)
+test_customer.py:59:4: C0116: Missing function or method docstring (missing-function-docstring)
+test_customer.py:64:4: C0116: Missing function or method docstring (missing-function-docstring)
+test_customer.py:71:4: C0116: Missing function or method docstring (missing-function-docstring)
+test_customer.py:80:4: C0116: Missing function or method docstring (missing-function-docstring)
+test_customer.py:127:54: W0613: Unused argument 'mock_file' (unused-argument)
+test_customer.py:2:0: W0611: Unused call imported from unittest.mock (unused-import)
+
+-----------------------------------
+Your code has been rated at 8.71/10
+
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> pylint test_customer.py
+test_customer.py:39:4: C0116: Missing function or method docstring (missing-function-docstring)
+test_customer.py:60:4: C0116: Missing function or method docstring (missing-function-docstring)
+test_customer.py:65:4: C0116: Missing function or method docstring (missing-function-docstring)
+test_customer.py:72:4: C0116: Missing function or method docstring (missing-function-docstring)
+test_customer.py:81:4: C0116: Missing function or method docstring (missing-function-docstring)
+test_customer.py:128:54: W0613: Unused argument 'mock_file' (unused-argument)
+test_customer.py:3:0: W0611: Unused call imported from unittest.mock (unused-import)
+
+------------------------------------------------------------------
+Your code has been rated at 9.00/10 (previous run: 8.71/10, +0.29)
+
+************* Module test_customer
+test_customer.py:39:4: C0116: Missing function or method docstring (missing-function-docstring)
+test_customer.py:60:4: C0116: Missing function or method docstring (missing-function-docstring)
+test_customer.py:65:4: C0116: Missing function or method docstring (missing-function-docstring)
+test_customer.py:72:4: C0116: Missing function or method docstring (missing-function-docstring)
+test_customer.py:81:4: C0116: Missing function or method docstring (missing-function-docstring)
+test_customer.py:3:0: W0611: Unused call imported from unittest.mock (unused-import)
+
+------------------------------------------------------------------
+Your code has been rated at 9.14/10 (previous run: 9.00/10, +0.14)
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> pylint test_customer.py
+************* Module test_customer
+test_customer.py:39:4: C0116: Missing function or method docstring (missing-function-docstring)
+test_customer.py:60:4: C0116: Missing function or method docstring (missing-function-docstring)
+test_customer.py:72:4: C0116: Missing function or method docstring (missing-function-docstring)
+test_customer.py:81:4: C0116: Missing function or method docstring (missing-function-docstring)
+
+------------------------------------------------------------------
+
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> pylint test_customer.py
+Your code has been rated at 10.00/10 (previous run: 9.29/10, +0.71)
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> flake8 test_customer.py
+test_customer.py:8:80: E501 line too long (89 > 79 characters)
+test_customer.py:93:80: E501 line too long (85 > 79 characters)
+test_customer.py:140:80: E501 line too long (90 > 79 characters)
+test_customer.py:142:80: E501 line too long (87 > 79 characters)
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> flake8 test_customer.py
+test_customer.py:142:80: E501 line too long (90 > 79 characters)
+test_customer.py:144:80: E501 line too long (87 > 79 characters)
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> flake8 test_customer.py
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> flake8 test_hotel.py
+test_hotel.py:6:1: F401 'unittest.mock.mock_open' imported but unused
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> pylint test_hotel.py
+************* Module test_hotel
+test_hotel.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+test_hotel.py:10:0: C0115: Missing class docstring (missing-class-docstring)
+test_hotel.py:30:8: C0103: Variable name "capturedOutput" doesn't conform to snake_case naming style (invalid-name)
+test_hotel.py:65:8: C0103: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
+test_hotel.py:10:0: R0904: Too many public methods (24/20) (too-many-public-methods)
+test_hotel.py:4:0: C0411: standard import "from io import StringIO" should be placed before "from hotel import Hotel" (wrong-import-order)
+test_hotel.py:5:0: C0411: standard import "import sys" should be placed before "from hotel import Hotel" (wrong-import-order)
+test_hotel.py:6:0: C0411: standard import "from unittest.mock import patch" should be placed before "from hotel import Hotel" (wrong-import-order)
+test_hotel.py:7:0: C0411: standard import "import datetime" should be placed before "from hotel import Hotel" (wrong-import-order)
+
+-----------------------------------
+Your code has been rated at 9.25/10
+
+************* Module test_hotel
+test_hotel.py:30:13: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
+test_hotel.py:32:8: C0103: Variable name "capturedOutput" doesn't conform to snake_case naming style (invalid-name)
+test_hotel.py:67:8: C0103: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
+test_hotel.py:11:0: R0904: Too many public methods (24/20) (too-many-public-methods)
+test_hotel.py:7:0: C0411: standard import "from io import StringIO" should be placed before "from hotel import Hotel" (wrong-import-order)
+test_hotel.py:8:0: C0411: standard import "from unittest.mock import patch" should be placed before "from hotel import Hotel" (wrong-import-order)
+
+------------------------------------------------------------------
+Your code has been rated at 9.55/10 (previous run: 9.25/10, +0.30)
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> pylint test_hotel.py
+************* Module test_hotel
+test_hotel.py:30:13: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
+test_hotel.py:67:8: C0103: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
+test_hotel.py:11:0: R0904: Too many public methods (24/20) (too-many-public-methods)
+test_hotel.py:7:0: C0411: standard import "from io import StringIO" should be placed before "from hotel import Hotel" (wrong-import-order)
+test_hotel.py:8:0: C0411: standard import "from unittest.mock import patch" should be placed before "from hotel import Hotel" (wrong-import-order)
+
+Your code has been rated at 9.62/10 (previous run: 9.55/10, +0.08)
+
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> pylint test_hotel.py
+************* Module test_hotel
+test_hotel.py:30:13: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
+test_hotel.py:67:8: C0103: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
+test_hotel.py:11:0: R0904: Too many public methods (24/20) (too-many-public-methods)
+------------------------------------------------------------------
+Your code has been rated at 9.77/10 (previous run: 9.62/10, +0.15)
+
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> pylint test_hotel.py
+************* Module test_hotel
+test_hotel.py:30:13: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
+
+------------------------------------------------------------------
+Your code has been rated at 9.85/10 (previous run: 9.77/10, +0.08)
+
+test_hotel.py:11:0: R0904: Too many public methods (24/20) (too-many-public-methods)
+
+------------------------------------------------------------------
+Your code has been rated at 9.92/10 (previous run: 9.85/10, +0.08)
+
+
+-------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 9.92/10, +0.08)
+
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> flake8 test_hotel.py
+..........
+
+OK
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> python -m unittest test_hotel_invalid.py
+............
+Ran 12 tests in 0.074s
+
+OK
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> flake8 test_hotel_invalid.py
+test_hotel_invalid.py:107:5: E303 too many blank lines (2)
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> flake8 test_hotel_invalid.py
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> pylint test_hotel_invalid.py
+
+------------------------------------
+Your code has been rated at 10.00/10
+
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> coverage run -m unittest discover
+.......E.................................E...
+======================================================================
+ERROR: test_load_customers_with_invalid_email_format (test_customer.TestCustomer)
+Test that ValueError for invalid email
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\ProgramData\anaconda3\lib\unittest\mock.py", line 1379, in patched
+    return func(*newargs, **newkeywargs)
+TypeError: TestCustomer.test_load_customers_with_invalid_email_format() takes 2 positional arguments but 3 were given
+
+======================================================================
+Test loading reservations from a file with invalid JSON logs the correct message.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\ProgramData\anaconda3\lib\unittest\mock.py", line 1379, in patched
+    return func(*newargs, **newkeywargs)
+
+----------------------------------------------------------------------
+Ran 45 tests in 0.200s
+
+FAILED (errors=2)
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> python -m unittest customer.py
+
+----------------------------------------------------------------------
+Ran 0 tests in 0.000s
+
+OK
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> python -m unittest test_customer.py
+.......E....
+======================================================================
+Test that ValueError for invalid email
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\ProgramData\anaconda3\lib\unittest\mock.py", line 1379, in patched
+    return func(*newargs, **newkeywargs)
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.032s
+
+FAILED (errors=1)
+...........
+----------------------------------------------------------------------
+Ran 11 tests in 0.027s
+
+OK
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> python -m unittest test_customer.py
+...........
+----------------------------------------------------------------------
+Ran 11 tests in 0.030s
+
+OK
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> coverage run -m unittest discover
+........................................E...
+======================================================================
+Test loading reservations from a file with invalid JSON logs the correct message.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\ProgramData\anaconda3\lib\unittest\mock.py", line 1379, in patched
+    return func(*newargs, **newkeywargs)
+TypeError: TestReservation.test_load_reservations_json_decode_error() takes 2 positional arguments but 3 were given
+
+----------------------------------------------------------------------
+Ran 44 tests in 0.177s
+
+FAILED (errors=1)
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> python -m unittest test_reservation.py
+.......E...
+======================================================================
+Test loading reservations from a file with invalid JSON logs the correct message.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\ProgramData\anaconda3\lib\unittest\mock.py", line 1379, in patched
+    return func(*newargs, **newkeywargs)
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.074s
+
+FAILED (errors=1)
+..........
+----------------------------------------------------------------------
+Ran 10 tests in 0.084s
+
+OK
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> coverage run -m unittest discover
+...........................................
+----------------------------------------------------------------------
+Ran 43 tests in 0.216s
+
+OK
+Name                    Stmts   Miss  Cover
+customer.py                57      2    96%
+hotel.py                   71      0   100%
+reservation.py             69      5    93%
+test_customer.py           67      1    99%
+-------------------------------------------
+TOTAL                     493     13    97%
+Wrote HTML report to htmlcov\index.html
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> pylint customer.py
+
+--------------------------------------------------------------------
+
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> flake8 customer.py
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> flake8 hotel.py
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> pylint hotel,py
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> pylint hotel.py
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> flake8 test_hotel.py
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> pylint test_hotel_invalid.py
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> flake8 test_hotel_invalid.py
+************* Module test_reservation
+test_reservation.py:5:0: W0611: Unused import json (unused-import)
+
+-------------------------------------------------------------------
+Your code has been rated at 9.87/10 (previous run: 10.00/10, -0.13)
+
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> pylint test_reservation.py
+
+-------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 9.87/10, +0.13)
+
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> flake8 test_reservation.py
+test_reservation.py:11:80: E501 line too long (92 > 79 characters)
+test_reservation.py:14:80: E501 line too long (88 > 79 characters)
+test_reservation.py:19:80: E501 line too long (99 > 79 characters)
+test_reservation.py:21:80: E501 line too long (89 > 79 characters)
+test_reservation.py:22:80: E501 line too long (88 > 79 characters)
+test_reservation.py:23:80: E501 line too long (87 > 79 characters)
+test_reservation.py:38:80: E501 line too long (89 > 79 characters)
+test_reservation.py:39:80: E501 line too long (88 > 79 characters)
+test_reservation.py:44:80: E501 line too long (100 > 79 characters)
+test_reservation.py:45:80: E501 line too long (100 > 79 characters)
+test_reservation.py:59:80: E501 line too long (94 > 79 characters)
+test_reservation.py:78:80: E501 line too long (85 > 79 characters)
+test_reservation.py:95:80: E501 line too long (82 > 79 characters)
+test_reservation.py:103:80: E501 line too long (90 > 79 characters)
+test_reservation.py:104:80: E501 line too long (84 > 79 characters)
+test_reservation.py:111:80: E501 line too long (90 > 79 characters)
+test_reservation.py:115:80: E501 line too long (85 > 79 characters)
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> flake8 test_reservation.py
+test_reservation.py:24:80: E501 line too long (89 > 79 characters)
+test_reservation.py:25:80: E501 line too long (88 > 79 characters)
+test_reservation.py:26:80: E501 line too long (87 > 79 characters)
+test_reservation.py:27:80: E501 line too long (86 > 79 characters)
+test_reservation.py:43:80: E501 line too long (89 > 79 characters)
+test_reservation.py:44:80: E501 line too long (88 > 79 characters)
+test_reservation.py:103:80: E501 line too long (82 > 79 characters)
+test_reservation.py:111:80: E501 line too long (90 > 79 characters)
+test_reservation.py:112:80: E501 line too long (84 > 79 characters)
+test_reservation.py:119:80: E501 line too long (90 > 79 characters)
+test_reservation.py:132:1: E305 expected 2 blank lines after class or function definition, found 1
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> flake8 test_reservation.py
+test_reservation.py:106:80: E501 line too long (82 > 79 characters)
+test_reservation.py:122:80: E501 line too long (90 > 79 characters)
+test_reservation.py:126:80: E501 line too long (85 > 79 characters)
+test_reservation.py:135:1: E305 expected 2 blank lines after class or function definition, found 1
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> flake8 test_reservation.py
+test_reservation.py:117:80: E501 line too long (84 > 79 characters)
+test_reservation.py:129:80: E501 line too long (85 > 79 characters)
+test_reservation.py:138:1: E305 expected 2 blank lines after class or function definition, found 1
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> flake8 test_reservation.py
+test_reservation.py:129:80: E501 line too long (85 > 79 characters)
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> flake8 test_reservation.py
+test_reservation.py:139:1: E305 expected 2 blank lines after class or function definition, found 1
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> flake8 test_reservation.py
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> pylint test_reservation.py
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> coverage run -m unittest discover
+...........................................
+----------------------------------------------------------------------
+
+OK
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> coverage report
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+customer.py                57      2    96%
+hotel.py                   71      0   100%
+reservation.py             69      5    93%
+test_customer.py           67      1    99%
+test_hotel.py              65      3    95%
+test_hotel_invalid.py      82      1    99%
+test_reservation.py        81      1    99%
+-------------------------------------------
+TOTAL                     492     13    97%
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2> coverage html
+Wrote HTML report to htmlcov\index.html
+(base) PS Z:\Maestria\Pruebas de software\Semana 6\A01793198_A6.2>
+

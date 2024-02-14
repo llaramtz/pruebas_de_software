@@ -1,0 +1,1 @@
+[{"hotel_id": "001", "name": "Test Hotel", "location": "Test Location", "rooms": {"101": {"capacity": 2, "reservations": []}}}]
