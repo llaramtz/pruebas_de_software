@@ -1,0 +1,18 @@
+[
+    {
+        "reservation_id": "XCV",
+        "hotel_id": "H001",
+        "room_number": 101,
+        "customer_id": "C001",
+        "start_date": "2025-02-10",
+        "end_date": "2025-02-15"
+    },
+    {
+        "reservation_id": "QWE",
+        "hotel_id": "H001",
+        "room_number": 102,
+        "customer_id": "C002",
+        "start_date": "2025-03-10",
+        "end_date": "2025-03-15"
+    }
+]
